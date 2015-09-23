@@ -1,0 +1,69 @@
+
+<section class="sub-banner">
+      <!--Background-->
+      <div class="bg-parallax bg-1"></div>
+      <!--End Background-->
+      <!-- Logo -->
+      <div class="logo-banner text-center">
+        <%= link_to root_path do %>
+            <%= image_tag "logo-banner.png", class: "" %>
+        <% end %>
+      </div>
+      <!-- Logo -->
+    </section>
+    <!--End Banner-->
+
+    <!-- Main -->
+    <div class="main">
+      <div class="container">
+        <div class="main-cn element-page bg-white clearfix">
+          <!--Breakcrumb-->
+          <section class="breakcrumb-sc">
+            <ul class="breadcrumb arrow">
+              <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+              <li>Search results</li>
+            </ul>
+          </section>
+          <!--End Breakcrumb-->
+          <section class="element-sc">
+            <!-- Content Table -->
+          <% if @grounds.present? %>
+
+            <% @grounds.each do |ground| %>
+              <div class="col-md-12 green  search-top">
+                <h4><%= ground.name %> | <span class=" fa fa-picture-o fa-1x"></span></h4>
+              </div>
+              
+              <div class="row">
+                <div class="col-md-1 col-xs-6">Type:</div>
+                <div class="col-md-4 col-xs-6"><%= ground.category %></div>
+                <div class="col-md-1 col-xs-6">Rating</div>
+                <div class="col-md-4 col-xs-6"><%= rating_for ground, "visual_effects" %></div>
+                <div class="col-md-2 col-xs-6">RS. <%= ground.weekend_price %>/<%= ground.weekday_price %></div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-md-1 col-xs-6">Address:</div>
+                <div class="col-md-4 col-xs-6"><%= ground.address %></div>
+                <div class="col-md-1 col-xs-6">Message</div>
+                <div class="col-md-4 col-xs-6">message</div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-md-1 col-xs-6">City</div>
+                <div class="col-md-4 col-xs-6"><%= ground.city %></div>
+                <!-- <div class="col-md-4 col-xs-6 col-md-offset-1"><%= ground.city %></div> -->
+                <div class="col-md-1 col-xs-6">Status</div>
+                <div class="col-md-4 col-xs-6">available</div>
+                <div class="col-md-2 col-xs-12"><%= link_to "View slot", ground_details_ground_path(ground), class: 'btn btn-primary' %></div>
+              </div>
+              <hr>
+            <% end %>
+          <% end %>  
+                  <!--End Accordion-->
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- End Main -->
+

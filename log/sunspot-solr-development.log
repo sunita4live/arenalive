@@ -1,0 +1,1338 @@
+Sep 06, 2015 2:04:31 AM org.apache.solr.servlet.SolrDispatchFilter init
+INFO: SolrDispatchFilter.init()
+Sep 06, 2015 2:04:32 AM org.apache.solr.core.SolrResourceLoader locateSolrHome
+INFO: JNDI not configured for solr (NoInitialContextEx)
+Sep 06, 2015 2:04:32 AM org.apache.solr.core.SolrResourceLoader locateSolrHome
+INFO: using system property solr.solr.home: /home/hp/rails_work/myappone/solr
+Sep 06, 2015 2:04:32 AM org.apache.solr.core.CoreContainer$Initializer initialize
+INFO: looking for solr.xml: /home/hp/rails_work/myappone/solr/solr.xml
+Sep 06, 2015 2:04:32 AM org.apache.solr.core.CoreContainer <init>
+INFO: New CoreContainer 1052967153
+Sep 06, 2015 2:04:32 AM org.apache.solr.core.CoreContainer load
+INFO: Loading CoreContainer using Solr Home: '/home/hp/rails_work/myappone/solr/'
+Sep 06, 2015 2:04:32 AM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: '/home/hp/rails_work/myappone/solr/'
+Sep 06, 2015 2:04:32 AM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+INFO: Setting socketTimeout to: 0
+Sep 06, 2015 2:04:32 AM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+INFO: Setting urlScheme to: http://
+Sep 06, 2015 2:04:32 AM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+INFO: Setting connTimeout to: 0
+Sep 06, 2015 2:04:32 AM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+INFO: Setting maxConnectionsPerHost to: 20
+Sep 06, 2015 2:04:32 AM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+INFO: Setting corePoolSize to: 0
+Sep 06, 2015 2:04:32 AM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+INFO: Setting maximumPoolSize to: 2147483647
+Sep 06, 2015 2:04:32 AM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+INFO: Setting maxThreadIdleTime to: 5
+Sep 06, 2015 2:04:32 AM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+INFO: Setting sizeOfQueue to: -1
+Sep 06, 2015 2:04:32 AM org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+INFO: Setting fairnessPolicy to: false
+Sep 06, 2015 2:04:32 AM org.apache.solr.client.solrj.impl.HttpClientUtil createClient
+INFO: Creating new http client, config:maxConnectionsPerHost=20&maxConnections=10000&socketTimeout=0&connTimeout=0&retry=false
+Sep 06, 2015 2:04:32 AM org.apache.solr.core.CoreContainer load
+INFO: Registering Log Listener
+Sep 06, 2015 2:04:32 AM org.apache.solr.core.CoreContainer create
+INFO: Creating SolrCore 'default' using instanceDir: /home/hp/rails_work/myappone/solr/.
+Sep 06, 2015 2:04:32 AM org.apache.solr.core.CoreContainer create
+INFO: Creating SolrCore 'development' using instanceDir: /home/hp/rails_work/myappone/solr/.
+Sep 06, 2015 2:04:32 AM org.apache.solr.core.CoreContainer create
+INFO: Creating SolrCore 'test' using instanceDir: /home/hp/rails_work/myappone/solr/.
+Sep 06, 2015 2:04:32 AM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: '/home/hp/rails_work/myappone/solr/./'
+Sep 06, 2015 2:04:32 AM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: '/home/hp/rails_work/myappone/solr/./'
+Sep 06, 2015 2:04:32 AM org.apache.solr.core.SolrResourceLoader <init>
+INFO: new SolrResourceLoader for directory: '/home/hp/rails_work/myappone/solr/./'
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.SolrConfig <init>
+INFO: Using Lucene MatchVersion: LUCENE_41
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.SolrConfig <init>
+INFO: Using Lucene MatchVersion: LUCENE_41
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.SolrConfig <init>
+INFO: Using Lucene MatchVersion: LUCENE_41
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.SolrConfig <init>
+INFO: Loaded SolrConfig: solrconfig.xml
+Sep 06, 2015 2:04:33 AM org.apache.solr.schema.IndexSchema readSchema
+INFO: Reading Solr Schema
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.SolrConfig <init>
+INFO: Loaded SolrConfig: solrconfig.xml
+Sep 06, 2015 2:04:33 AM org.apache.solr.schema.IndexSchema readSchema
+INFO: Reading Solr Schema
+Sep 06, 2015 2:04:33 AM org.apache.solr.schema.IndexSchema readSchema
+INFO: Schema name=sunspot
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.SolrConfig <init>
+INFO: Loaded SolrConfig: solrconfig.xml
+Sep 06, 2015 2:04:33 AM org.apache.solr.schema.IndexSchema readSchema
+INFO: Reading Solr Schema
+Sep 06, 2015 2:04:33 AM org.apache.solr.schema.IndexSchema readSchema
+INFO: Schema name=sunspot
+Sep 06, 2015 2:04:33 AM org.apache.solr.schema.IndexSchema readSchema
+INFO: Schema name=sunspot
+Sep 06, 2015 2:04:33 AM org.apache.solr.schema.IndexSchema readSchema
+INFO: default search field in schema is text
+Sep 06, 2015 2:04:33 AM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is AND
+Sep 06, 2015 2:04:33 AM org.apache.solr.schema.IndexSchema readSchema
+INFO: unique key field: id
+Sep 06, 2015 2:04:33 AM org.apache.solr.schema.IndexSchema readSchema
+INFO: default search field in schema is text
+Sep 06, 2015 2:04:33 AM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is AND
+Sep 06, 2015 2:04:33 AM org.apache.solr.schema.IndexSchema readSchema
+INFO: default search field in schema is text
+Sep 06, 2015 2:04:33 AM org.apache.solr.schema.IndexSchema readSchema
+INFO: query parser default operator is AND
+Sep 06, 2015 2:04:33 AM org.apache.solr.schema.IndexSchema readSchema
+INFO: unique key field: id
+Sep 06, 2015 2:04:33 AM org.apache.solr.schema.IndexSchema readSchema
+INFO: unique key field: id
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.SolrCore <init>
+INFO: [development] Opening new SolrCore at /home/hp/rails_work/myappone/solr/./, dataDir=/home/hp/rails_work/myappone/solr/./development/data/
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.SolrCore <init>
+INFO: [default] Opening new SolrCore at /home/hp/rails_work/myappone/solr/./, dataDir=/home/hp/rails_work/myappone/solr/./default/data/
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.SolrCore <init>
+INFO: [test] Opening new SolrCore at /home/hp/rails_work/myappone/solr/./, dataDir=/home/hp/rails_work/myappone/solr/./test/data/
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.SolrCore <init>
+INFO: JMX monitoring not detected for core: development
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.SolrCore <init>
+INFO: JMX monitoring not detected for core: default
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.SolrCore <init>
+INFO: JMX monitoring not detected for core: test
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.SolrCore initDirectoryFactory
+INFO: solr.NRTCachingDirectoryFactory
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.SolrCore initDirectoryFactory
+INFO: solr.NRTCachingDirectoryFactory
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.SolrCore initDirectoryFactory
+INFO: solr.NRTCachingDirectoryFactory
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/hp/rails_work/myappone/solr/./test/data forceNew: false
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.SolrCore getNewIndexDir
+INFO: New index directory detected: old=null new=/home/hp/rails_work/myappone/solr/./test/data/index/
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/hp/rails_work/myappone/solr/./development/data forceNew: false
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.SolrCore initIndex
+WARNING: [test] Solr index directory '/home/hp/rails_work/myappone/solr/./test/data/index' doesn't exist. Creating new index...
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.SolrCore getNewIndexDir
+INFO: New index directory detected: old=null new=/home/hp/rails_work/myappone/solr/./development/data/index/
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.SolrCore initIndex
+WARNING: [development] Solr index directory '/home/hp/rails_work/myappone/solr/./development/data/index' doesn't exist. Creating new index...
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/hp/rails_work/myappone/solr/./default/data forceNew: false
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.SolrCore getNewIndexDir
+INFO: New index directory detected: old=null new=/home/hp/rails_work/myappone/solr/./default/data/index/
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.SolrCore initIndex
+WARNING: [default] Solr index directory '/home/hp/rails_work/myappone/solr/./default/data/index' doesn't exist. Creating new index...
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/hp/rails_work/myappone/solr/./development/data/index forceNew: false
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/hp/rails_work/myappone/solr/./test/data/index forceNew: false
+Sep 06, 2015 2:04:33 AM org.apache.solr.core.CachingDirectoryFactory get
+INFO: return new directory for /home/hp/rails_work/myappone/solr/./default/data/index forceNew: false
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.SolrDeletionPolicy onCommit
+INFO: SolrDeletionPolicy.onCommit: commits:num=1
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1,filenames=[segments_1]
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.SolrDeletionPolicy onCommit
+INFO: SolrDeletionPolicy.onCommit: commits:num=1
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/test/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3ab6d3d6; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1,filenames=[segments_1]
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 1[segments_1]
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 1[segments_1]
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.SolrDeletionPolicy onCommit
+INFO: SolrDeletionPolicy.onCommit: commits:num=1
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/default/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3309674f; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1,filenames=[segments_1]
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 1[segments_1]
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /select: solr.SearchHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /query: solr.SearchHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /select: solr.SearchHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /select: solr.SearchHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /query: solr.SearchHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /query: solr.SearchHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /get: solr.RealTimeGetHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /get: solr.RealTimeGetHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /get: solr.RealTimeGetHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update: solr.UpdateRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update: solr.UpdateRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update/json: solr.JsonUpdateRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update/csv: solr.CSVRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update: solr.UpdateRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update/json: solr.JsonUpdateRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update/json: solr.JsonUpdateRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update/csv: solr.CSVRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update/extract: solr.extraction.ExtractingRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /analysis/field: solr.FieldAnalysisRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /analysis/document: solr.DocumentAnalysisRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update/csv: solr.CSVRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update/extract: solr.extraction.ExtractingRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /update/extract: solr.extraction.ExtractingRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /analysis/field: solr.FieldAnalysisRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /analysis/field: solr.FieldAnalysisRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /analysis/document: solr.DocumentAnalysisRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /analysis/document: solr.DocumentAnalysisRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/ping: solr.PingRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /debug/dump: solr.DumpRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /debug/dump: solr.DumpRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /debug/dump: solr.DumpRequestHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /replication: solr.ReplicationHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /replication: solr.ReplicationHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /replication: solr.ReplicationHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /mlt: solr.MoreLikeThisHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/: solr.admin.AdminHandlers
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /mlt: solr.MoreLikeThisHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /mlt: solr.MoreLikeThisHandler
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/: solr.admin.AdminHandlers
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.RequestHandlers initHandlersFromConfig
+INFO: created /admin/: solr.admin.AdminHandlers
+Sep 06, 2015 2:04:34 AM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+Sep 06, 2015 2:04:34 AM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+Sep 06, 2015 2:04:34 AM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+Sep 06, 2015 2:04:34 AM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+Sep 06, 2015 2:04:34 AM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+Sep 06, 2015 2:04:34 AM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+Sep 06, 2015 2:04:34 AM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+Sep 06, 2015 2:04:34 AM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+Sep 06, 2015 2:04:34 AM org.apache.solr.handler.loader.XMLLoader init
+INFO: xsltCacheLifetimeSeconds=60
+Sep 06, 2015 2:04:34 AM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@ee44545 main
+Sep 06, 2015 2:04:34 AM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@29e4c151 main
+Sep 06, 2015 2:04:34 AM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@7496f6a9 main
+Sep 06, 2015 2:04:34 AM org.apache.solr.update.CommitTracker <init>
+INFO: Hard AutoCommit: if uncommited for 15000ms; 
+Sep 06, 2015 2:04:34 AM org.apache.solr.update.CommitTracker <init>
+INFO: Hard AutoCommit: if uncommited for 15000ms; 
+Sep 06, 2015 2:04:34 AM org.apache.solr.update.CommitTracker <init>
+INFO: Hard AutoCommit: if uncommited for 15000ms; 
+Sep 06, 2015 2:04:34 AM org.apache.solr.update.CommitTracker <init>
+INFO: Soft AutoCommit: if uncommited for 5000ms; 
+Sep 06, 2015 2:04:34 AM org.apache.solr.update.CommitTracker <init>
+INFO: Soft AutoCommit: if uncommited for 5000ms; 
+Sep 06, 2015 2:04:34 AM org.apache.solr.handler.component.SpellCheckComponent inform
+INFO: Initializing spell checkers
+Sep 06, 2015 2:04:34 AM org.apache.solr.handler.component.SpellCheckComponent inform
+INFO: Initializing spell checkers
+Sep 06, 2015 2:04:34 AM org.apache.solr.update.CommitTracker <init>
+INFO: Soft AutoCommit: if uncommited for 5000ms; 
+Sep 06, 2015 2:04:34 AM org.apache.solr.handler.component.SpellCheckComponent inform
+INFO: Initializing spell checkers
+Sep 06, 2015 2:04:34 AM org.apache.solr.handler.component.SpellCheckComponent inform
+INFO: Registering newSearcher listener for spellchecker: default
+Sep 06, 2015 2:04:34 AM org.apache.solr.handler.component.SpellCheckComponent inform
+INFO: Registering newSearcher listener for spellchecker: default
+Sep 06, 2015 2:04:34 AM org.apache.solr.handler.component.SpellCheckComponent inform
+INFO: Registering newSearcher listener for spellchecker: default
+Sep 06, 2015 2:04:34 AM org.apache.solr.spelling.DirectSolrSpellChecker init
+INFO: init: {name=example,field=title_text,buildOnCommit=true,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+Sep 06, 2015 2:04:34 AM org.apache.solr.spelling.DirectSolrSpellChecker init
+INFO: init: {name=example,field=title_text,buildOnCommit=true,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+Sep 06, 2015 2:04:34 AM org.apache.solr.handler.component.SpellCheckComponent inform
+INFO: Registering newSearcher listener for spellchecker: example
+Sep 06, 2015 2:04:34 AM org.apache.solr.spelling.DirectSolrSpellChecker init
+INFO: init: {name=example,field=title_text,buildOnCommit=true,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+Sep 06, 2015 2:04:34 AM org.apache.solr.handler.component.SpellCheckComponent inform
+INFO: Registering newSearcher listener for spellchecker: example
+Sep 06, 2015 2:04:34 AM org.apache.solr.handler.component.SpellCheckComponent inform
+INFO: Registering newSearcher listener for spellchecker: example
+Sep 06, 2015 2:04:34 AM org.apache.solr.handler.component.SpellCheckComponent inform
+INFO: No queryConverter defined, using default converter
+Sep 06, 2015 2:04:34 AM org.apache.solr.handler.component.SpellCheckComponent inform
+INFO: No queryConverter defined, using default converter
+Sep 06, 2015 2:04:34 AM org.apache.solr.handler.component.SpellCheckComponent inform
+INFO: No queryConverter defined, using default converter
+Sep 06, 2015 2:04:34 AM org.apache.solr.handler.ReplicationHandler inform
+INFO: Commits will be reserved for  10000
+Sep 06, 2015 2:04:34 AM org.apache.solr.handler.ReplicationHandler inform
+INFO: Commits will be reserved for  10000
+Sep 06, 2015 2:04:34 AM org.apache.solr.handler.ReplicationHandler inform
+INFO: Commits will be reserved for  10000
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.SolrCore registerSearcher
+INFO: [default] Registered new searcher Searcher@29e4c151 main{StandardDirectoryReader(segments_1:1)}
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.CoreContainer registerCore
+INFO: registering core: development
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.CoreContainer registerCore
+INFO: registering core: test
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.SolrCore registerSearcher
+INFO: [development] Registered new searcher Searcher@7496f6a9 main{StandardDirectoryReader(segments_1:1)}
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.SolrCore registerSearcher
+INFO: [test] Registered new searcher Searcher@ee44545 main{StandardDirectoryReader(segments_1:1)}
+Sep 06, 2015 2:04:34 AM org.apache.solr.core.CoreContainer registerCore
+INFO: registering core: default
+Sep 06, 2015 2:04:34 AM org.apache.solr.servlet.SolrDispatchFilter init
+INFO: user.dir=/home/hp/.rvm/gems/ruby-2.2.1@appone/gems/sunspot_solr-2.2.0/solr
+Sep 06, 2015 2:04:34 AM org.apache.solr.servlet.SolrDispatchFilter init
+INFO: SolrDispatchFilter.init() done
+Sep 06, 2015 2:29:12 AM org.apache.solr.core.SolrDeletionPolicy onInit
+INFO: SolrDeletionPolicy.onInit: commits:num=1
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1,filenames=[segments_1]
+Sep 06, 2015 2:29:12 AM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 1[segments_1]
+Sep 06, 2015 2:29:12 AM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@f57329e realtime
+Sep 06, 2015 2:29:12 AM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {deleteByQuery=type:Ground (-1511508413176086528)} 0 101
+Sep 06, 2015 2:29:17 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+Sep 06, 2015 2:29:17 AM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@3b80fa6e main
+Sep 06, 2015 2:29:17 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+Sep 06, 2015 2:29:17 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: default
+Sep 06, 2015 2:29:17 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: example
+Sep 06, 2015 2:29:17 AM org.apache.solr.core.SolrCore registerSearcher
+INFO: [development] Registered new searcher Searcher@3b80fa6e main{StandardDirectoryReader(segments_1:1:nrt)}
+Sep 06, 2015 2:29:27 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+Sep 06, 2015 2:29:27 AM org.apache.solr.core.SolrDeletionPolicy onCommit
+INFO: SolrDeletionPolicy.onCommit: commits:num=2
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1,filenames=[segments_1]
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_2,generation=2,filenames=[segments_2]
+Sep 06, 2015 2:29:27 AM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 2[segments_2]
+Sep 06, 2015 2:29:27 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+Sep 06, 2015 2:29:36 AM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {deleteByQuery=type:Ground (-1511508438471933952)} 0 1
+Sep 06, 2015 2:29:41 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+Sep 06, 2015 2:29:41 AM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@1de444a2 main
+Sep 06, 2015 2:29:41 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+Sep 06, 2015 2:29:41 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: default
+Sep 06, 2015 2:29:41 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: example
+Sep 06, 2015 2:29:41 AM org.apache.solr.core.SolrCore registerSearcher
+INFO: [development] Registered new searcher Searcher@1de444a2 main{StandardDirectoryReader(segments_1:1:nrt)}
+Sep 06, 2015 2:29:51 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+Sep 06, 2015 2:29:51 AM org.apache.solr.core.SolrDeletionPolicy onCommit
+INFO: SolrDeletionPolicy.onCommit: commits:num=2
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_2,generation=2,filenames=[segments_2]
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_3,generation=3,filenames=[segments_3]
+Sep 06, 2015 2:29:51 AM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 3[segments_3]
+Sep 06, 2015 2:29:51 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+Sep 06, 2015 2:42:23 AM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {deleteByQuery=type:Ground (-1511509241932808192)} 0 2
+Sep 06, 2015 2:42:28 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+Sep 06, 2015 2:42:28 AM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@5fe13a3f main
+Sep 06, 2015 2:42:28 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+Sep 06, 2015 2:42:28 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: default
+Sep 06, 2015 2:42:28 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: example
+Sep 06, 2015 2:42:28 AM org.apache.solr.core.SolrCore registerSearcher
+INFO: [development] Registered new searcher Searcher@5fe13a3f main{StandardDirectoryReader(segments_1:1:nrt)}
+Sep 06, 2015 2:42:38 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+Sep 06, 2015 2:42:38 AM org.apache.solr.core.SolrDeletionPolicy onCommit
+INFO: SolrDeletionPolicy.onCommit: commits:num=2
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_3,generation=3,filenames=[segments_3]
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_4,generation=4,filenames=[segments_4]
+Sep 06, 2015 2:42:38 AM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 4[segments_4]
+Sep 06, 2015 2:42:38 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+Sep 06, 2015 2:45:04 AM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {deleteByQuery=type:Ground (-1511509411631202304)} 0 1
+Sep 06, 2015 2:45:09 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+Sep 06, 2015 2:45:09 AM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@6fb0ae5e main
+Sep 06, 2015 2:45:09 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+Sep 06, 2015 2:45:09 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: default
+Sep 06, 2015 2:45:09 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: example
+Sep 06, 2015 2:45:09 AM org.apache.solr.core.SolrCore registerSearcher
+INFO: [development] Registered new searcher Searcher@6fb0ae5e main{StandardDirectoryReader(segments_1:1:nrt)}
+Sep 06, 2015 2:45:19 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+Sep 06, 2015 2:45:19 AM org.apache.solr.core.SolrDeletionPolicy onCommit
+INFO: SolrDeletionPolicy.onCommit: commits:num=2
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_4,generation=4,filenames=[segments_4]
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_5,generation=5,filenames=[segments_5]
+Sep 06, 2015 2:45:19 AM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 5[segments_5]
+Sep 06, 2015 2:45:19 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+Sep 06, 2015 2:47:57 AM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {deleteByQuery=type:Ground (-1511509592920555520)} 0 1
+Sep 06, 2015 2:48:02 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+Sep 06, 2015 2:48:02 AM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@60bf0173 main
+Sep 06, 2015 2:48:02 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+Sep 06, 2015 2:48:02 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: default
+Sep 06, 2015 2:48:02 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: example
+Sep 06, 2015 2:48:02 AM org.apache.solr.core.SolrCore registerSearcher
+INFO: [development] Registered new searcher Searcher@60bf0173 main{StandardDirectoryReader(segments_1:1:nrt)}
+Sep 06, 2015 2:48:12 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+Sep 06, 2015 2:48:12 AM org.apache.solr.core.SolrDeletionPolicy onCommit
+INFO: SolrDeletionPolicy.onCommit: commits:num=2
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_5,generation=5,filenames=[segments_5]
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_6,generation=6,filenames=[segments_6]
+Sep 06, 2015 2:48:12 AM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 6[segments_6]
+Sep 06, 2015 2:48:12 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+Sep 06, 2015 2:49:15 AM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {deleteByQuery=type:Ground (-1511509673971286016)} 0 1
+Sep 06, 2015 2:49:20 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+Sep 06, 2015 2:49:20 AM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@527fc831 main
+Sep 06, 2015 2:49:20 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+Sep 06, 2015 2:49:20 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: default
+Sep 06, 2015 2:49:20 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: example
+Sep 06, 2015 2:49:20 AM org.apache.solr.core.SolrCore registerSearcher
+INFO: [development] Registered new searcher Searcher@527fc831 main{StandardDirectoryReader(segments_1:1:nrt)}
+Sep 06, 2015 2:49:30 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+Sep 06, 2015 2:49:30 AM org.apache.solr.core.SolrDeletionPolicy onCommit
+INFO: SolrDeletionPolicy.onCommit: commits:num=2
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_6,generation=6,filenames=[segments_6]
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_7,generation=7,filenames=[segments_7]
+Sep 06, 2015 2:49:30 AM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 7[segments_7]
+Sep 06, 2015 2:49:30 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+Sep 06, 2015 2:57:33 AM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {deleteByQuery=type:Ground (-1511510196421132288)} 0 1
+Sep 06, 2015 2:57:38 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+Sep 06, 2015 2:57:38 AM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@6474afba main
+Sep 06, 2015 2:57:38 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+Sep 06, 2015 2:57:38 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: default
+Sep 06, 2015 2:57:38 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: example
+Sep 06, 2015 2:57:38 AM org.apache.solr.core.SolrCore registerSearcher
+INFO: [development] Registered new searcher Searcher@6474afba main{StandardDirectoryReader(segments_1:1:nrt)}
+Sep 06, 2015 2:57:48 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+Sep 06, 2015 2:57:48 AM org.apache.solr.core.SolrDeletionPolicy onCommit
+INFO: SolrDeletionPolicy.onCommit: commits:num=2
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_7,generation=7,filenames=[segments_7]
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_8,generation=8,filenames=[segments_8]
+Sep 06, 2015 2:57:48 AM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 8[segments_8]
+Sep 06, 2015 2:57:48 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+Sep 06, 2015 3:05:38 AM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {deleteByQuery=type:Ground (-1511510704691085312)} 0 1
+Sep 06, 2015 3:05:38 AM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {add=[Ground 1 (1511510704808525824), Ground 2 (1511510704838934528), Ground 3 (1511510704842080256), Ground 4 (1511510704854663168), Ground 5 (1511510704855711744), Ground 6 (1511510704857808896), Ground 7 (1511510704858857472), Ground 8 (1511510704860954624), Ground 9 (1511510704862003200), Ground 10 (1511510704863051776), ... (15 adds)]} 0 67
+Sep 06, 2015 3:05:38 AM org.apache.solr.common.SolrException log
+SEVERE: org.apache.solr.common.SolrException: Error while creating field 'booking_dates_dm{type=date,properties=indexed,omitNorms,multiValued}' from value ''
+	at org.apache.solr.schema.FieldType.createField(FieldType.java:259)
+	at org.apache.solr.schema.DateField.createField(DateField.java:204)
+	at org.apache.solr.schema.FieldType.createFields(FieldType.java:302)
+	at org.apache.solr.update.DocumentBuilder.addField(DocumentBuilder.java:180)
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:251)
+	at org.apache.solr.update.AddUpdateCommand.getLuceneDocument(AddUpdateCommand.java:73)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:204)
+	at org.apache.solr.update.processor.RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:69)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:51)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:451)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:587)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:346)
+	at org.apache.solr.update.processor.LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:100)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:246)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:173)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:92)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:74)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1797)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:637)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:343)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:141)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Invalid Date String:''
+	at org.apache.solr.schema.DateField.parseMath(DateField.java:182)
+	at org.apache.solr.schema.DateField.toInternal(DateField.java:152)
+	at org.apache.solr.schema.FieldType.createField(FieldType.java:257)
+	... 46 more
+
+Sep 06, 2015 3:05:38 AM org.apache.solr.common.SolrException log
+SEVERE: null:org.apache.solr.common.SolrException: Error while creating field 'booking_dates_dm{type=date,properties=indexed,omitNorms,multiValued}' from value ''
+	at org.apache.solr.schema.FieldType.createField(FieldType.java:259)
+	at org.apache.solr.schema.DateField.createField(DateField.java:204)
+	at org.apache.solr.schema.FieldType.createFields(FieldType.java:302)
+	at org.apache.solr.update.DocumentBuilder.addField(DocumentBuilder.java:180)
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:251)
+	at org.apache.solr.update.AddUpdateCommand.getLuceneDocument(AddUpdateCommand.java:73)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:204)
+	at org.apache.solr.update.processor.RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:69)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:51)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:451)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:587)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:346)
+	at org.apache.solr.update.processor.LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:100)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:246)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:173)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:92)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:74)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1797)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:637)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:343)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:141)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Invalid Date String:''
+	at org.apache.solr.schema.DateField.parseMath(DateField.java:182)
+	at org.apache.solr.schema.DateField.toInternal(DateField.java:152)
+	at org.apache.solr.schema.FieldType.createField(FieldType.java:257)
+	... 46 more
+
+Sep 06, 2015 3:05:38 AM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {add=[Ground 1 (1511510704901849088), Ground 2 (1511510704903946240), Ground 3 (1511510704906043392), Ground 4 (1511510704907091968), Ground 5 (1511510704909189120), Ground 6 (1511510704910237696), Ground 7 (1511510704911286272), Ground 8 (1511510704913383424), Ground 9 (1511510704914432000), Ground 10 (1511510704916529152), ... (15 adds)]} 0 27
+Sep 06, 2015 3:05:38 AM org.apache.solr.common.SolrException log
+SEVERE: org.apache.solr.common.SolrException: Error while creating field 'booking_dates_dm{type=date,properties=indexed,omitNorms,multiValued}' from value ''
+	at org.apache.solr.schema.FieldType.createField(FieldType.java:259)
+	at org.apache.solr.schema.DateField.createField(DateField.java:204)
+	at org.apache.solr.schema.FieldType.createFields(FieldType.java:302)
+	at org.apache.solr.update.DocumentBuilder.addField(DocumentBuilder.java:180)
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:251)
+	at org.apache.solr.update.AddUpdateCommand.getLuceneDocument(AddUpdateCommand.java:73)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:204)
+	at org.apache.solr.update.processor.RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:69)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:51)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:451)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:587)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:346)
+	at org.apache.solr.update.processor.LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:100)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:246)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:173)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:92)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:74)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1797)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:637)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:343)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:141)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Invalid Date String:''
+	at org.apache.solr.schema.DateField.parseMath(DateField.java:182)
+	at org.apache.solr.schema.DateField.toInternal(DateField.java:152)
+	at org.apache.solr.schema.FieldType.createField(FieldType.java:257)
+	... 46 more
+
+Sep 06, 2015 3:05:38 AM org.apache.solr.common.SolrException log
+SEVERE: null:org.apache.solr.common.SolrException: Error while creating field 'booking_dates_dm{type=date,properties=indexed,omitNorms,multiValued}' from value ''
+	at org.apache.solr.schema.FieldType.createField(FieldType.java:259)
+	at org.apache.solr.schema.DateField.createField(DateField.java:204)
+	at org.apache.solr.schema.FieldType.createFields(FieldType.java:302)
+	at org.apache.solr.update.DocumentBuilder.addField(DocumentBuilder.java:180)
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:251)
+	at org.apache.solr.update.AddUpdateCommand.getLuceneDocument(AddUpdateCommand.java:73)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:204)
+	at org.apache.solr.update.processor.RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:69)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:51)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:451)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:587)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:346)
+	at org.apache.solr.update.processor.LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:100)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:246)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:173)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:92)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:74)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1797)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:637)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:343)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:141)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Invalid Date String:''
+	at org.apache.solr.schema.DateField.parseMath(DateField.java:182)
+	at org.apache.solr.schema.DateField.toInternal(DateField.java:152)
+	at org.apache.solr.schema.FieldType.createField(FieldType.java:257)
+	... 46 more
+
+Sep 06, 2015 3:05:38 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+Sep 06, 2015 3:05:38 AM org.apache.solr.core.SolrDeletionPolicy onCommit
+INFO: SolrDeletionPolicy.onCommit: commits:num=2
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_8,generation=8,filenames=[segments_8]
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_9,generation=9,filenames=[_0_Lucene41_0.tip, _0_1.del, segments_9, _0_Lucene41_0.doc, _0.si, _0_Lucene41_0.tim, _0.fdx, _0.fdt, _0_Lucene41_0.pos, _0.fnm]
+Sep 06, 2015 3:05:38 AM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 9[_0_Lucene41_0.tip, _0_1.del, segments_9, _0_Lucene41_0.doc, _0.si, _0_Lucene41_0.tim, _0.fdx, _0.fdt, _0_Lucene41_0.pos, _0.fnm]
+Sep 06, 2015 3:05:38 AM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@28a73337 main
+Sep 06, 2015 3:05:38 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: default
+Sep 06, 2015 3:05:38 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+Sep 06, 2015 3:05:38 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: example
+Sep 06, 2015 3:05:38 AM org.apache.solr.core.SolrCore registerSearcher
+INFO: [development] Registered new searcher Searcher@28a73337 main{StandardDirectoryReader(segments_9:3:nrt _0(4.2):C30/15)}
+Sep 06, 2015 3:05:38 AM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {commit=} 0 405
+Sep 06, 2015 3:05:51 AM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@52fbc810 realtime
+Sep 06, 2015 3:05:51 AM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {deleteByQuery=type:Ground (-1511510718696914944)} 0 28
+Sep 06, 2015 3:05:51 AM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {add=[Ground 1 (1511510718801772544), Ground 2 (1511510718803869696), Ground 3 (1511510718804918272), Ground 4 (1511510718807015424), Ground 5 (1511510718808064000), Ground 6 (1511510718809112576), Ground 7 (1511510718810161152), Ground 8 (1511510718811209728), Ground 9 (1511510718812258304), Ground 10 (1511510718812258305), ... (15 adds)]} 0 28
+Sep 06, 2015 3:05:51 AM org.apache.solr.common.SolrException log
+SEVERE: org.apache.solr.common.SolrException: Error while creating field 'booking_dates_dm{type=date,properties=indexed,omitNorms,multiValued}' from value ''
+	at org.apache.solr.schema.FieldType.createField(FieldType.java:259)
+	at org.apache.solr.schema.DateField.createField(DateField.java:204)
+	at org.apache.solr.schema.FieldType.createFields(FieldType.java:302)
+	at org.apache.solr.update.DocumentBuilder.addField(DocumentBuilder.java:180)
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:251)
+	at org.apache.solr.update.AddUpdateCommand.getLuceneDocument(AddUpdateCommand.java:73)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:204)
+	at org.apache.solr.update.processor.RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:69)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:51)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:451)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:587)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:346)
+	at org.apache.solr.update.processor.LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:100)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:246)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:173)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:92)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:74)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1797)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:637)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:343)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:141)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Invalid Date String:''
+	at org.apache.solr.schema.DateField.parseMath(DateField.java:182)
+	at org.apache.solr.schema.DateField.toInternal(DateField.java:152)
+	at org.apache.solr.schema.FieldType.createField(FieldType.java:257)
+	... 46 more
+
+Sep 06, 2015 3:05:51 AM org.apache.solr.common.SolrException log
+SEVERE: null:org.apache.solr.common.SolrException: Error while creating field 'booking_dates_dm{type=date,properties=indexed,omitNorms,multiValued}' from value ''
+	at org.apache.solr.schema.FieldType.createField(FieldType.java:259)
+	at org.apache.solr.schema.DateField.createField(DateField.java:204)
+	at org.apache.solr.schema.FieldType.createFields(FieldType.java:302)
+	at org.apache.solr.update.DocumentBuilder.addField(DocumentBuilder.java:180)
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:251)
+	at org.apache.solr.update.AddUpdateCommand.getLuceneDocument(AddUpdateCommand.java:73)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:204)
+	at org.apache.solr.update.processor.RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:69)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:51)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:451)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:587)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:346)
+	at org.apache.solr.update.processor.LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:100)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:246)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:173)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:92)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:74)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1797)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:637)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:343)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:141)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Invalid Date String:''
+	at org.apache.solr.schema.DateField.parseMath(DateField.java:182)
+	at org.apache.solr.schema.DateField.toInternal(DateField.java:152)
+	at org.apache.solr.schema.FieldType.createField(FieldType.java:257)
+	... 46 more
+
+Sep 06, 2015 3:05:51 AM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {add=[Ground 1 (1511510718846861312), Ground 2 (1511510718848958464), Ground 3 (1511510718850007040), Ground 4 (1511510718851055616), Ground 5 (1511510718852104192), Ground 6 (1511510718852104193), Ground 7 (1511510718853152768), Ground 8 (1511510718854201344), Ground 9 (1511510718854201345), Ground 10 (1511510718855249920), ... (15 adds)]} 0 14
+Sep 06, 2015 3:05:51 AM org.apache.solr.common.SolrException log
+SEVERE: org.apache.solr.common.SolrException: Error while creating field 'booking_dates_dm{type=date,properties=indexed,omitNorms,multiValued}' from value ''
+	at org.apache.solr.schema.FieldType.createField(FieldType.java:259)
+	at org.apache.solr.schema.DateField.createField(DateField.java:204)
+	at org.apache.solr.schema.FieldType.createFields(FieldType.java:302)
+	at org.apache.solr.update.DocumentBuilder.addField(DocumentBuilder.java:180)
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:251)
+	at org.apache.solr.update.AddUpdateCommand.getLuceneDocument(AddUpdateCommand.java:73)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:204)
+	at org.apache.solr.update.processor.RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:69)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:51)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:451)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:587)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:346)
+	at org.apache.solr.update.processor.LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:100)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:246)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:173)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:92)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:74)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1797)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:637)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:343)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:141)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Invalid Date String:''
+	at org.apache.solr.schema.DateField.parseMath(DateField.java:182)
+	at org.apache.solr.schema.DateField.toInternal(DateField.java:152)
+	at org.apache.solr.schema.FieldType.createField(FieldType.java:257)
+	... 46 more
+
+Sep 06, 2015 3:05:51 AM org.apache.solr.common.SolrException log
+SEVERE: null:org.apache.solr.common.SolrException: Error while creating field 'booking_dates_dm{type=date,properties=indexed,omitNorms,multiValued}' from value ''
+	at org.apache.solr.schema.FieldType.createField(FieldType.java:259)
+	at org.apache.solr.schema.DateField.createField(DateField.java:204)
+	at org.apache.solr.schema.FieldType.createFields(FieldType.java:302)
+	at org.apache.solr.update.DocumentBuilder.addField(DocumentBuilder.java:180)
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:251)
+	at org.apache.solr.update.AddUpdateCommand.getLuceneDocument(AddUpdateCommand.java:73)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:204)
+	at org.apache.solr.update.processor.RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:69)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:51)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:451)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:587)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:346)
+	at org.apache.solr.update.processor.LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:100)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:246)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:173)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:92)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:74)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1797)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:637)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:343)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:141)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Invalid Date String:''
+	at org.apache.solr.schema.DateField.parseMath(DateField.java:182)
+	at org.apache.solr.schema.DateField.toInternal(DateField.java:152)
+	at org.apache.solr.schema.FieldType.createField(FieldType.java:257)
+	... 46 more
+
+Sep 06, 2015 3:05:51 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+Sep 06, 2015 3:05:51 AM org.apache.solr.core.SolrDeletionPolicy onCommit
+INFO: SolrDeletionPolicy.onCommit: commits:num=2
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_9,generation=9,filenames=[_0_Lucene41_0.tip, _0_1.del, segments_9, _0_Lucene41_0.doc, _0.si, _0_Lucene41_0.tim, _0.fdx, _0.fdt, _0_Lucene41_0.pos, _0.fnm]
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_a,generation=10,filenames=[_1.si, _1_Lucene41_0.tip, _1_1.del, segments_a, _1.fdx, _1_Lucene41_0.doc, _1_Lucene41_0.tim, _1.fnm, _1.fdt, _1_Lucene41_0.pos]
+Sep 06, 2015 3:05:51 AM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 10[_1.si, _1_Lucene41_0.tip, _1_1.del, segments_a, _1.fdx, _1_Lucene41_0.doc, _1_Lucene41_0.tim, _1.fnm, _1.fdt, _1_Lucene41_0.pos]
+Sep 06, 2015 3:05:51 AM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@451ab93a main
+Sep 06, 2015 3:05:51 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: default
+Sep 06, 2015 3:05:51 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+Sep 06, 2015 3:05:51 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: example
+Sep 06, 2015 3:05:51 AM org.apache.solr.core.SolrCore registerSearcher
+INFO: [development] Registered new searcher Searcher@451ab93a main{StandardDirectoryReader(segments_a:7:nrt _1(4.2):C30/15)}
+Sep 06, 2015 3:05:51 AM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {commit=} 0 325
+Sep 06, 2015 3:11:03 AM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@7c35d2cb realtime
+Sep 06, 2015 3:11:03 AM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {deleteByQuery=type:Ground (-1511511046339166208)} 0 5
+Sep 06, 2015 3:11:03 AM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {add=[Ground 1 (1511511046436683776), Ground 2 (1511511046438780928), Ground 3 (1511511046439829504), Ground 4 (1511511046441926656), Ground 5 (1511511046444023808), Ground 6 (1511511046445072384), Ground 7 (1511511046446120960), Ground 8 (1511511046447169536), Ground 9 (1511511046448218112), Ground 10 (1511511046449266688), ... (15 adds)]} 0 20
+Sep 06, 2015 3:11:03 AM org.apache.solr.common.SolrException log
+SEVERE: org.apache.solr.common.SolrException: Error while creating field 'booking_dates_dm{type=date,properties=indexed,omitNorms,multiValued}' from value ''
+	at org.apache.solr.schema.FieldType.createField(FieldType.java:259)
+	at org.apache.solr.schema.DateField.createField(DateField.java:204)
+	at org.apache.solr.schema.FieldType.createFields(FieldType.java:302)
+	at org.apache.solr.update.DocumentBuilder.addField(DocumentBuilder.java:180)
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:251)
+	at org.apache.solr.update.AddUpdateCommand.getLuceneDocument(AddUpdateCommand.java:73)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:204)
+	at org.apache.solr.update.processor.RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:69)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:51)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:451)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:587)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:346)
+	at org.apache.solr.update.processor.LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:100)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:246)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:173)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:92)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:74)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1797)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:637)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:343)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:141)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Invalid Date String:''
+	at org.apache.solr.schema.DateField.parseMath(DateField.java:182)
+	at org.apache.solr.schema.DateField.toInternal(DateField.java:152)
+	at org.apache.solr.schema.FieldType.createField(FieldType.java:257)
+	... 46 more
+
+Sep 06, 2015 3:11:03 AM org.apache.solr.common.SolrException log
+SEVERE: null:org.apache.solr.common.SolrException: Error while creating field 'booking_dates_dm{type=date,properties=indexed,omitNorms,multiValued}' from value ''
+	at org.apache.solr.schema.FieldType.createField(FieldType.java:259)
+	at org.apache.solr.schema.DateField.createField(DateField.java:204)
+	at org.apache.solr.schema.FieldType.createFields(FieldType.java:302)
+	at org.apache.solr.update.DocumentBuilder.addField(DocumentBuilder.java:180)
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:251)
+	at org.apache.solr.update.AddUpdateCommand.getLuceneDocument(AddUpdateCommand.java:73)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:204)
+	at org.apache.solr.update.processor.RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:69)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:51)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:451)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:587)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:346)
+	at org.apache.solr.update.processor.LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:100)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:246)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:173)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:92)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:74)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1797)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:637)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:343)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:141)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Invalid Date String:''
+	at org.apache.solr.schema.DateField.parseMath(DateField.java:182)
+	at org.apache.solr.schema.DateField.toInternal(DateField.java:152)
+	at org.apache.solr.schema.FieldType.createField(FieldType.java:257)
+	... 46 more
+
+Sep 06, 2015 3:11:08 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+Sep 06, 2015 3:11:08 AM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@3b60558 main
+Sep 06, 2015 3:11:08 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+Sep 06, 2015 3:11:08 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: default
+Sep 06, 2015 3:11:08 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: example
+Sep 06, 2015 3:11:08 AM org.apache.solr.core.SolrCore registerSearcher
+INFO: [development] Registered new searcher Searcher@3b60558 main{StandardDirectoryReader(segments_a:11:nrt _2(4.2):C15)}
+Sep 06, 2015 3:11:18 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+Sep 06, 2015 3:11:19 AM org.apache.solr.core.SolrDeletionPolicy onCommit
+INFO: SolrDeletionPolicy.onCommit: commits:num=2
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_a,generation=10,filenames=[_1.si, _1_Lucene41_0.tip, _1_1.del, segments_a, _1.fdx, _1_Lucene41_0.doc, _1_Lucene41_0.tim, _1.fnm, _1.fdt, _1_Lucene41_0.pos]
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_b,generation=11,filenames=[_2.si, _2_Lucene41_0.tip, segments_b, _2.fdt, _2_Lucene41_0.doc, _2_Lucene41_0.tim, _2.fnm, _2.fdx, _2_Lucene41_0.pos]
+Sep 06, 2015 3:11:19 AM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 11[_2.si, _2_Lucene41_0.tip, segments_b, _2.fdt, _2_Lucene41_0.doc, _2_Lucene41_0.tim, _2.fnm, _2.fdx, _2_Lucene41_0.pos]
+Sep 06, 2015 3:11:19 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+Sep 06, 2015 3:12:24 AM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@5bff5ee5 realtime
+Sep 06, 2015 3:12:24 AM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {deleteByQuery=type:Ground (-1511511131017969664)} 0 4
+Sep 06, 2015 3:12:24 AM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {add=[Ground 1 (1511511131058864128), Ground 2 (1511511131059912704), Ground 3 (1511511131060961280), Ground 4 (1511511131062009856), Ground 5 (1511511131063058432), Ground 6 (1511511131064107008), Ground 7 (1511511131065155584), Ground 8 (1511511131065155585), Ground 9 (1511511131066204160), Ground 10 (1511511131066204161), ... (15 adds)]} 0 16
+Sep 06, 2015 3:12:24 AM org.apache.solr.common.SolrException log
+SEVERE: org.apache.solr.common.SolrException: Error while creating field 'booking_dates_dm{type=date,properties=indexed,omitNorms,multiValued}' from value ''
+	at org.apache.solr.schema.FieldType.createField(FieldType.java:259)
+	at org.apache.solr.schema.DateField.createField(DateField.java:204)
+	at org.apache.solr.schema.FieldType.createFields(FieldType.java:302)
+	at org.apache.solr.update.DocumentBuilder.addField(DocumentBuilder.java:180)
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:251)
+	at org.apache.solr.update.AddUpdateCommand.getLuceneDocument(AddUpdateCommand.java:73)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:204)
+	at org.apache.solr.update.processor.RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:69)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:51)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:451)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:587)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:346)
+	at org.apache.solr.update.processor.LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:100)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:246)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:173)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:92)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:74)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1797)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:637)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:343)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:141)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Invalid Date String:''
+	at org.apache.solr.schema.DateField.parseMath(DateField.java:182)
+	at org.apache.solr.schema.DateField.toInternal(DateField.java:152)
+	at org.apache.solr.schema.FieldType.createField(FieldType.java:257)
+	... 46 more
+
+Sep 06, 2015 3:12:24 AM org.apache.solr.common.SolrException log
+SEVERE: null:org.apache.solr.common.SolrException: Error while creating field 'booking_dates_dm{type=date,properties=indexed,omitNorms,multiValued}' from value ''
+	at org.apache.solr.schema.FieldType.createField(FieldType.java:259)
+	at org.apache.solr.schema.DateField.createField(DateField.java:204)
+	at org.apache.solr.schema.FieldType.createFields(FieldType.java:302)
+	at org.apache.solr.update.DocumentBuilder.addField(DocumentBuilder.java:180)
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:251)
+	at org.apache.solr.update.AddUpdateCommand.getLuceneDocument(AddUpdateCommand.java:73)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:204)
+	at org.apache.solr.update.processor.RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:69)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:51)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:451)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:587)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:346)
+	at org.apache.solr.update.processor.LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:100)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:246)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:173)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:92)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:74)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1797)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:637)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:343)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:141)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1307)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:453)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:560)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1072)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:382)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1006)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:365)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:485)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:856)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Invalid Date String:''
+	at org.apache.solr.schema.DateField.parseMath(DateField.java:182)
+	at org.apache.solr.schema.DateField.toInternal(DateField.java:152)
+	at org.apache.solr.schema.FieldType.createField(FieldType.java:257)
+	... 46 more
+
+Sep 06, 2015 3:12:29 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+Sep 06, 2015 3:12:29 AM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@438850e1 main
+Sep 06, 2015 3:12:29 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+Sep 06, 2015 3:12:29 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: default
+Sep 06, 2015 3:12:29 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: example
+Sep 06, 2015 3:12:29 AM org.apache.solr.core.SolrCore registerSearcher
+INFO: [development] Registered new searcher Searcher@438850e1 main{StandardDirectoryReader(segments_b:15:nrt _3(4.2):C15)}
+Sep 06, 2015 3:12:39 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+Sep 06, 2015 3:12:39 AM org.apache.solr.core.SolrDeletionPolicy onCommit
+INFO: SolrDeletionPolicy.onCommit: commits:num=2
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_b,generation=11,filenames=[_2.si, _2_Lucene41_0.tip, segments_b, _2.fdt, _2_Lucene41_0.doc, _2_Lucene41_0.tim, _2.fnm, _2.fdx, _2_Lucene41_0.pos]
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_c,generation=12,filenames=[_3.fdx, _3_Lucene41_0.pos, _3.si, _3_Lucene41_0.doc, _3_Lucene41_0.tim, _3_Lucene41_0.tip, _3.fnm, _3.fdt, segments_c]
+Sep 06, 2015 3:12:39 AM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 12[_3.fdx, _3_Lucene41_0.pos, _3.si, _3_Lucene41_0.doc, _3_Lucene41_0.tim, _3_Lucene41_0.tip, _3.fnm, _3.fdt, segments_c]
+Sep 06, 2015 3:12:39 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+Sep 06, 2015 3:12:44 AM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@78a99faf realtime
+Sep 06, 2015 3:12:44 AM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {deleteByQuery=type:Ground (-1511511152036675584)} 0 2
+Sep 06, 2015 3:12:44 AM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {add=[Ground 1 (1511511152077570048), Ground 2 (1511511152079667200), Ground 3 (1511511152079667201), Ground 4 (1511511152080715776), Ground 5 (1511511152081764352), Ground 6 (1511511152081764353), Ground 7 (1511511152082812928), Ground 8 (1511511152083861504), Ground 9 (1511511152083861505), Ground 10 (1511511152084910080), ... (20 adds)]} 0 14
+Sep 06, 2015 3:12:44 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+Sep 06, 2015 3:12:45 AM org.apache.solr.core.SolrDeletionPolicy onCommit
+INFO: SolrDeletionPolicy.onCommit: commits:num=2
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_c,generation=12,filenames=[_3.fdx, _3_Lucene41_0.pos, _3.si, _3_Lucene41_0.doc, _3_Lucene41_0.tim, _3_Lucene41_0.tip, _3.fnm, _3.fdt, segments_c]
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_d,generation=13,filenames=[_4.fdt, _4_Lucene41_0.pos, _4.fnm, _4_Lucene41_0.tip, _4_Lucene41_0.doc, _4_Lucene41_0.tim, _4.si, segments_d, _4.fdx]
+Sep 06, 2015 3:12:45 AM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 13[_4.fdt, _4_Lucene41_0.pos, _4.fnm, _4_Lucene41_0.tip, _4_Lucene41_0.doc, _4_Lucene41_0.tim, _4.si, segments_d, _4.fdx]
+Sep 06, 2015 3:12:45 AM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@3d5d2491 main
+Sep 06, 2015 3:12:45 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: default
+Sep 06, 2015 3:12:45 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+Sep 06, 2015 3:12:45 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: example
+Sep 06, 2015 3:12:45 AM org.apache.solr.core.SolrCore registerSearcher
+INFO: [development] Registered new searcher Searcher@3d5d2491 main{StandardDirectoryReader(segments_d:19:nrt _4(4.2):C20)}
+Sep 06, 2015 3:12:45 AM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {commit=} 0 309
+Sep 06, 2015 3:34:48 AM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={q=delhi&defType=edismax&fl=*+score&start=0&fq=type:Ground&rows=30&wt=ruby} hits=0 status=0 QTime=22 
+Sep 06, 2015 3:35:25 AM org.apache.solr.core.SolrCore execute
+INFO: [development] webapp=/solr path=/select params={q=Delhi&defType=edismax&fl=*+score&start=0&fq=type:Ground&rows=30&wt=ruby} hits=0 status=0 QTime=2 
+Sep 06, 2015 3:35:37 AM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@27bac635 realtime
+Sep 06, 2015 3:35:37 AM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {deleteByQuery=type:Ground (-1511512591425339392)} 0 5
+Sep 06, 2015 3:35:37 AM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {add=[Ground 1 (1511512591467282432), Ground 2 (1511512591468331008), Ground 3 (1511512591468331009), Ground 4 (1511512591469379584), Ground 5 (1511512591469379585), Ground 6 (1511512591469379586), Ground 7 (1511512591469379587), Ground 8 (1511512591470428160), Ground 9 (1511512591470428161), Ground 10 (1511512591470428162), ... (20 adds)]} 0 7
+Sep 06, 2015 3:35:37 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+Sep 06, 2015 3:35:37 AM org.apache.solr.core.SolrDeletionPolicy onCommit
+INFO: SolrDeletionPolicy.onCommit: commits:num=2
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_d,generation=13,filenames=[_4.fdt, _4_Lucene41_0.pos, _4.fnm, _4_Lucene41_0.tip, _4_Lucene41_0.doc, _4_Lucene41_0.tim, _4.si, segments_d, _4.fdx]
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.MMapDirectory@/home/hp/rails_work/myappone/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@48362c32; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_e,generation=14,filenames=[_5.fnm, _5_Lucene41_0.tip, _5.fdt, _5_Lucene41_0.doc, _5_Lucene41_0.tim, _5_Lucene41_0.pos, segments_e, _5.si, _5.fdx]
+Sep 06, 2015 3:35:37 AM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 14[_5.fnm, _5_Lucene41_0.tip, _5.fdt, _5_Lucene41_0.doc, _5_Lucene41_0.tim, _5_Lucene41_0.pos, segments_e, _5.si, _5.fdx]
+Sep 06, 2015 3:35:37 AM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@323fb011 main
+Sep 06, 2015 3:35:37 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: default
+Sep 06, 2015 3:35:37 AM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+Sep 06, 2015 3:35:37 AM org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener buildSpellIndex
+INFO: Building spell index for spell checker: example
+Sep 06, 2015 3:35:37 AM org.apache.solr.core.SolrCore registerSearcher
+INFO: [development] Registered new searcher Searcher@323fb011 main{StandardDirectoryReader(segments_e:23:nrt _5(4.2):C20)}
+Sep 06, 2015 3:35:37 AM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {commit=} 0 312

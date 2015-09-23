@@ -1,0 +1,235 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>SpotMyArena</title>
+    <%= stylesheet_link_tag  'application', media: 'all' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7COpen+Sans:300,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <%= csrf_meta_tags %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    
+     
+   <%= javascript_include_tag 'application' %>
+  </head>
+  <body>
+
+    <div id="preloader">
+      <div class="tb-cell">
+        <div id="page-loading">
+          <div></div>
+          <p>Loading</p>
+        </div>
+      </div>
+    </div>
+      
+   <!-- Wrap -->
+    <div id="wrap">
+    <!-- Header -->
+      <header id="header" class="header">
+        <div class="container">   
+          <!-- Logo -->
+          <div class="logo float-left">
+            <%= link_to root_path do %>
+               <%= image_tag "logo-header.png", class: "some css class here" %>
+            <% end %>
+              
+          </div>
+          <!-- End Logo -->
+          <!-- Bars -->
+          <div class="bars" id="bars"></div>
+          <!-- End Bars -->
+
+            <!--Navigation-->
+            <nav class="navigation nav-c" id="navigation" data-menu-type="1200">
+              <div class="nav-inner">
+                <a href="#" class="bars-close" id="bars-close">Close</a>
+                <div class="tb">
+                  <div class="tb-cell">
+                    <ul class="menu-list text-uppercase">
+                      <li class="current-menu-parent">
+                        <%= link_to 'Home', root_path %>
+                      </li>
+                      <% if current_page?(root_path) %>
+                        <li>
+                          <a class="smoothscroll" href="#sales">Services </a>
+                        </li>
+                        <li>
+                          <a class="smoothscroll" href="#destinations" title="">About  </a>
+                        </li>
+                        <li>
+                          <a class="smoothscroll" href="#magazine" title="">BUTTON4</a>
+                        </li>
+                        <li>
+                          <a class="smoothscroll" href="#faq" title="">F&Q</a>
+                        </li>
+                        <li>
+                          <a class="smoothscroll" href="#contact-maps" title="">Contact Us</a>
+                        </li>
+                      <% else %>
+                        <li>
+                          <%= link_to 'Services', root_path %>
+                          <!-- <a class="smoothscroll" href="#sales">Services </a> -->
+                        </li>
+                        <li>
+                          <%= link_to 'About', root_path %>
+                          <!-- <a class="smoothscroll" href="#destinations" title="">About  </a> -->
+                        </li>
+                        <li>
+                          <%= link_to 'Button', root_path %>
+                          <!-- <a class="smoothscroll" href="#magazine" title="">BUTTON4</a> -->
+                        </li>
+                        <li>
+                          <%= link_to 'FAQ', root_path %>
+                          <!-- <a class="smoothscroll" href="#faq" title="">F&Q</a> -->
+                        </li>
+                        <li>
+                          <%= link_to 'Contact us', root_path %>
+                          <!-- <a class="smoothscroll" href="#contact-maps" title="">Contact Us</a> -->
+                        </li>
+                      <% end %>
+                      <% if user_signed_in? %>
+                        <li>
+                          <%= link_to "Dashboard", edit_user_registration_path %>
+                        </li>
+                      <% else %>
+                        <li>
+                        <%= link_to "LOGIN/SIGNUP", new_user_registration_path %>
+                        </li>
+                      <% end %>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+     
+            
+            <!--End Navigation-->
+        </div>
+      </header>
+
+
+      <% if notice %>
+        <p class="alert alert-success"><%= notice %></p>
+      <% end %>
+      <% if alert %>
+        <p class="alert alert-danger"><%= alert %></p>
+      <% end %>
+      <%= yield %>
+      <footer>
+              <div class="container">
+                  <div class="row">
+                      <!-- Logo -->
+                      <div class="col-md-4">
+                          <div class="logo-foter">
+                            <%= link_to root_path do %>
+                               <%= image_tag "logo-footer.png", class: "some css class here" %>
+                            <% end %>
+                          </div>
+                      </div>
+                      <!-- End Logo -->
+                      <!-- Navigation Footer -->
+                      <div class="col-xs-6 col-sm-3 col-md-2">
+                          <div class="ul-ft">
+                            <ul>
+                                
+                                
+                            </ul>
+                        </div>
+                          
+                      </div>
+                      <!-- End Navigation Footer -->
+                      <!-- Navigation Footer -->
+                      <div class="col-xs-6 col-sm-3 col-md-2">
+                          <div class="ul-ft">
+                            <ul>
+                                <li><a href="#contact-maps" title="">Contact Us</a></li>
+                                <li><a href="#destinations" title="">About Us</a></li>
+                                <li><a href="#sales" title="">Services</a></li>
+                                <li><a href="#faq" title="">FAQ</a></li>
+                            </ul>
+                        </div>
+                      </div>
+                      <!-- End Navigation Footer -->
+                      <!-- Footer Currency, Language -->
+                      <div class="col-sm-6 col-md-4">
+                          <!-- Language -->
+                          <div class="currency-lang-bottom dropdown-cn float-left">
+                            <%= link_to '' do %>
+                               <%= image_tag "fpic.png", class: "some css class here" %>
+                            <% end %>
+                              
+
+                          </div>
+                          <!-- End Language -->
+                          <!-- Currency -->
+                          <div class="currency-lang-bottom dropdown-cn float-left">
+                              <%= link_to '' do %>
+                                 <%= image_tag "fpic2.png", class: "some css class here" %>
+                              <% end %>
+                               
+
+                          </div>
+                          <!-- End Currency -->
+                          <!--CopyRight-->
+                          <p class="copyright">
+                              © 2015 spotmyarena All rights reserved.
+                          </p>
+                          <!--CopyRight-->
+                      </div>
+                      <!-- End Footer Currency, Language -->
+                  </div>
+              </div>
+          </footer>
+      <!-- End Header -->
+    </div>
+<!-- <script src="//code.jquery.com/jquery-1.11.3.min.js"></script> -->
+
+  </body>
+  </html>
+
+  <script>
+      setTimeout("$('.alert').fadeOut('slow')", 5000);
+      setTimeout("$('.alert-success').fadeOut('slow')", 5000);
+      setTimeout("$('.alert-danger').fadeOut('slow')", 5000);
+
+      $(function() {
+        $('a.smoothscroll[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top - 100
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+
+      $(document).ready(fnReadyIndex());
+      function fnReadyIndex () {
+        $(".menu-list>li>a").on("click", function() {
+         $(".menu-list>li").removeClass("current-menu-parent");
+         $(this).parent().addClass("current-menu-parent");
+        });
+      }
+  </script>
+  <script>
+  
+  </script>
+
+
+  <style type="text/css">
+    html, body {
+      height: 100%;
+    }
+
+  </style>
+
+

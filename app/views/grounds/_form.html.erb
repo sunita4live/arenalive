@@ -1,0 +1,267 @@
+
+  <section class="sub-banner">
+            <!--Background-->
+            <div class="bg-parallax bg-1"></div>
+            <!--End Background-->
+            <!-- Logo -->
+            <div class="logo-banner text-center">
+                <%= link_to root_path do %>
+                    <%= image_tag "logo-banner.png", class: "" %>
+                <% end %>
+            </div>
+            <!-- Logo -->
+        </section>
+        <!--End Banner-->
+
+        <!-- Main -->
+        <div class="main">
+            <div class="container">
+                <div class="main-cn element-page bg-white clearfix">
+                    <!--Breakcrumb-->
+                    <section class="breakcrumb-sc">
+                        <ul class="breadcrumb arrow">
+                            <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+                            <li>Ground section</li>
+                        </ul>
+                    </section>
+                    <!--End Breakcrumb-->
+                    
+                    <section class="user-profile">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="user-profile__header">
+                                    <h4><%= current_user.name %></h4>
+                                    <span>Member Since <%= current_user.created_at.strftime("%b %Y")%></span>
+                                    <p>
+                                      <% if current_user.avatar.present? %>
+                                        <%= image_tag current_user.avatar_url %>
+                                      <% else %>
+                                        <%= image_tag('avatar.png') %>
+                                      <% end %>
+                                    </p>
+                                </div>
+                                <ul class="user-profile__navigation">
+                                    <% if current_user.has_role? :ground_owner %>
+                                      <li>
+                                        <%= link_to grounds_path do %>
+                                            My grounds<%= image_tag('icon-cart.png') %>
+                                        <% end %>
+                                      </li>
+                                      <li class="current">
+                                        <%= link_to new_ground_path do %>
+                                          new ground entry<%= image_tag('icon-hotel.png') %>
+                                        <% end %>
+                                      </li>
+                                    <% else %>
+                                      <li >
+                                        <%= link_to bookings_path do %>
+                                            My bookings<%= image_tag('icon-cart.png') %>
+                                        <% end %>
+                                      </li>
+                                    <% end %>  
+                                      <li >
+                                      <%= link_to profile_path do %>
+                                        My profile <%= image_tag('icon-user.png') %>
+                                      <% end %>
+                                    </li>
+                                    <li>
+                                      <%= link_to edit_user_registration_path do %>
+                                        Setting <%= image_tag('icon-setting.png') %>
+                                      <% end %>
+                                    </li>
+                                    
+                                    <li>
+                                      <%= link_to destroy_user_session_path, method: :delete do %>
+                                        logout <%= image_tag('icon-back.png') %>
+                                      <% end %>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-9">
+                                <h2 class="user-profile__title">New Ground</h2>
+                                <div class="user-form">
+                                    <div class="row">
+                                    <%= form_for @ground do |f| %>
+                                        <ul>
+                                          <% @ground.errors.full_messages.each do |msg| %>
+                                          <li style="color: red;"><%= msg %></li>
+                                          <% end %>
+                                        </ul>
+                                        <div class="col-md-6">
+                                        
+                                            
+                                            <h3>Ground info</h3>
+                                            <div class="field-input">
+                                              <%= f.label :name %><br />
+                                              <%= f.text_field :name, :placeholder => "Enter name of ground" , class: "input-text" %>
+                                              
+                                            </div>
+                                            <div class="field-input">
+                                                <%= f.label :category %><br />
+                                                <%= f.select :category, options_for_select(Ground::CATEGORY), { :placeholder => "Enter area details"}, {class: 'input-select'}%>
+                                            </div>
+                                            <div class="field-input">
+                                              <%= f.label :city %><br />
+                                              <%= f.select :city, options_for_select(Ground::CITY), { :placeholder => "Enter area details"}, {class: 'input-select'}%>                   
+                                            </div>
+                                            
+                                            <h3>Pricing</h3>
+                                            <div class="field-input">
+                                              <%= f.label :weekday_price %><br />
+                                              <%= f.select :weekday_price, Ground::WEEKDAY, {:placeholder => "Enter weekday_price"}, {class: 'input-select'} %>
+                                              <%#= f.text_field :weekday_price, :placeholder => "Enter weekday_price", class: "input-text" %>
+                                            </div>
+                                            <div class="field-input">
+                                              <%= f.label :weekend_price %><br />
+                                              <%= f.select :weekend_price, Ground::WEEKEND, {:placeholder => "Enter weekend_price"}, {class: 'input-select'} %>
+                                              <%#= f.text_field :weekend_price, :placeholder => "Enter weekend_price", class: "input-text" %>
+                                            </div>
+                                            <!-- <h3>Contact & availability</h3> -->
+                                            
+                                                          
+                                            <div class="field-input">
+                                              <%= f.label :court %><br />
+                                              <%= f.select :court, options_for_select([1, 2, 3, 4, 5]), { :placeholder => "No of court"}, {class: 'input-select'} %>
+                                            </div>
+                                            <div class="field-input">
+                                              <%= f.label :attention_message %><br />
+                                              <%= f.text_area :attention_message, :placeholder => "Enter attention message", class: "input-text" %>
+                                            </div>  
+                                            <h3>Ground Images</h3>
+                                            <div class="field-input"> 
+                                            <table id="tasks">
+                                                  <%= f.fields_for :ground_attachments, :wrapper => false do |ground_attachment| %>
+                                                    <tr class="fields">
+                                                      <%= render "ground_attachments/form", f: ground_attachment %>
+                                                    </tr>
+                                                  <% end %>
+                                                </table>
+                                                <%= link_to_add_association 'add photo', f, :ground_attachments, partial: 'ground_attachments/form', class: 'btn1'%> 
+                                            </div> 
+
+                                            <h3>Date & timing schedule</h3>
+                                            <% if params[:action] == "edit" %>
+                                              <span>Following dates are already added</span><br>
+                                              <% @added_dates.each do |d| %>
+                                                <a class= "date_button"><%= d.strftime("%d %b %Y")%></a>
+                                              <% end %><br>
+                                              <span>(Please do not select above dates they were already added)</span><br>
+                                              <div class="field-input">
+                                                  <%= f.label "Add_more dates_for_booking" %><br>
+                                                  <%= f.text_field :add_booking_dates, class: 'field-input-calendar field-date-ground dates_field', id: "dates_field", placeholder: "add more dates here"%>
+                                              </div>
+                                              
+                                              <span>(If you wants to close any date from above dates please added here)</span><br>
+                                              <div class="field-input">
+                                                  <%= f.label "Closing_dates" %><br>
+                                                  <%= f.text_field :add_closing_dates, class: 'field-input-calendar field-date-ground', id: "dates_field1", placeholder: "add closing date here"%>
+                                              </div><br>
+                                              <div class="field-input">
+                                                <%= f.label "Closing time" %><br>
+                                                <%= f.select :closing_times, @closing_times, {}, {multiple: true, class: "select-multiple field-input-calendar form-control" , id: "closing_times"} %>
+                                              </div>
+                                              <span>(If you were added closing time then added closing time will be delete from all added dates)</span><br>
+                                              <h3>Special closing time</h3>
+                                                
+                                                <div class="field-input">
+                                                  <%= f.label "Select date for special closing_times" %><br>
+                                                  <%= f.text_field :special_closing_date, class: 'field-input-calendar field-date-ground datepicker', id: "dates_field4", placeholder: "add closing date here"%>
+                                                </div>
+                                                <span>(please select date from added dates for off special closing time, only added times off for this date)</span>
+                                                <div class="field-input">
+                                                <%= f.label "special closing hours" %><br>
+                                                <%= f.select :special_closing_times, @closing_times, {}, {multiple: true, class: "form-control select-multiple field-input-calendar" , id: "closing_times1"} %>
+                                                </div>
+                                                <span>(add special closing hours)</span><br>
+
+                                            <% else %>
+                                              <div class="field-input">
+                                                  <%= f.label "Add_dates_for_booking" %><br>
+                                                  <%= f.text_field :add_booking_dates, class: 'field-input-calendar field-date-ground dates_field', id: "dates_field2", placeholder: "Booking start_date date"%>
+                                              </div>
+                                            <% end %>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <h3>Address details</h3>
+                                            <div class="field-input">
+                                                <%= f.label :area %><br />
+                                                <%= f.select :area, options_for_select(Ground::AREA), { :placeholder => "Enter area details"}, {class: 'input-select'} %>
+                                            </div>
+                                            <div class="field-input">
+                                              <%= f.label :pincode %><br />
+                                              <%= f.text_field :pincode,  :placeholder => "Enter pincode" , class: "input-text" %>
+                                            </div>                  
+                                            <div class="field-input">
+                                              <%= f.label :address %><br />
+                                              <%= f.text_field :address, :placeholder => "Enter address", class: "input-text" %>
+                                            </div>
+                                            <div class="field-input">
+                                              <%= f.label "Contact no." %><br />
+                                              <%= f.text_field :phone, :placeholder => "Enter Contact no", class: "input-text" %>
+                                            </div>
+                                            <br>
+                                            <div class="field-input">
+                                                <%= f.check_box :status , {checked: true}%>&nbsp;&nbsp;<%= f.label "Availability status" %>
+                                            </div> 
+                                            
+                                            
+                                        </div>
+                                      
+                                    </div>
+                                    <div class="field-input">
+                                      <%= f.submit params[:action] == "edit" ? "Save changes" : "Create", class: "awe-btn awe-btn-1 awe-btn-medium"%> <%= link_to 'Cancle and go back', grounds_path, :class => 'awe-btn awe-btn-1 awe-btn-medium cancle' %>
+                                    </div>
+                                  <% end %>  
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- End Main -->
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.datepicker').datepicker({
+      dateFormat: "dd/mm/yy",
+      showOtherMonths: true,
+      selectOtherMonths: true,
+      minDate: 0
+    });
+  $("#dates_field").multiDatesPicker({
+    dateFormat: "dd/mm/yy",
+    
+    minDate: 0,
+    // addDisabledDates: "<%= @added_dates %>"
+  });
+
+  $("#dates_field1").multiDatesPicker({
+    dateFormat: "dd/mm/yy",
+    showOtherMonths: true,
+    selectOtherMonths: true,
+    minDate: 0
+  });
+
+  $("#dates_field2").multiDatesPicker({
+    dateFormat: "dd/mm/yy",
+    showOtherMonths: true,
+    selectOtherMonths: true,
+    minDate: 0
+  });
+
+  $('#closing_times').select2({
+    allowClear: true,
+    placeholder: "select multiple closing times"
+  });  
+
+
+  $('#closing_times1').select2({
+    allowClear: true,
+    placeholder: "select multiple special closing times"
+  });  
+  });
+
+</script>

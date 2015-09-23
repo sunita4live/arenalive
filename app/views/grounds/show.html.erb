@@ -1,0 +1,215 @@
+
+<section class="sub-banner">
+      <!--Background-->
+      <div class="bg-parallax bg-1"></div>
+      <!--End Background-->
+      <!-- Logo -->
+      <div class="logo-banner text-center">
+        <%= link_to root_path do %>
+            <%= image_tag "logo-banner.png", class: "" %>
+        <% end %>
+      </div>
+      <!-- Logo -->
+    </section>
+    <!--End Banner-->
+
+    <!-- Main -->
+    <div class="main">
+      <div class="container">
+        <div class="main-cn element-page bg-white clearfix">
+          <!--Breakcrumb-->
+          <section class="breakcrumb-sc">
+            <ul class="breadcrumb arrow">
+              <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+              <li>Ground details</li>
+            </ul>
+          </section>
+          <!--End Breakcrumb-->
+          <section class="element-sc">
+            <!-- Content Table -->
+            <div class="col-md-12 green">
+              <h3><%= @ground.name %> | <span class=" fa fa-picture-o fa-1x"></span></h3>
+            </div>
+            <div class="row">
+              <div class="col-md-2 col-xs-6"><h4>Ground Type:</h4></div>
+              <div class="col-md-2 col-xs-6"><h4><%= @ground.category %></h4></div>
+              <div class="col-md-2 col-xs-6"><h4>Address:</h4></div>
+              <div class="col-md-2 col-xs-6"><h4><%= @ground.address %></h4></div>
+              <div class="col-md-2 col-xs-6"><h4>city:</h4></div>
+              <div class="col-md-2 col-xs-6"><h4><%= @ground.city %></h4></div>
+            </div>
+            <br>
+            <hr>
+            
+            <div class="row">
+              <div class="col-md-2 col-xs-6"><h4>area:</h4></div>
+              <div class="col-md-2 col-xs-6"><h4><%= @ground.area %></h4></div>
+              <div class="col-md-2 col-xs-6"><h4>Contact</h4></div>
+              <div class="col-md-2 col-xs-6 contact"><h4><%= @ground.phone.present? ? @ground.phone : 'NOT-AVAILABLE' %></h4></div>
+              <div class="col-md-2 col-xs-6"><h4>Price:</h4></div>
+              <div class="col-md-2 col-xs-6 price"><h4>Rs. <%= @ground.weekend_price %>/<%= @ground.weekday_price %><h6>(Weekend/Weekday)</h6></h4></div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-md-2 col-xs-6"><h4>Message:</h4></div>
+              <div class="col-md-8 col-xs-6"><h4>this is my message</h4></div>
+            </div>
+            <br>
+            <hr>
+            <% if current_user.has_role? "ground_owner"%>
+              <div class="row">
+                <div class="col-md-4 col-xs-12"><%= link_to 'Click to edit', edit_ground_path(@ground), class: 'btn btn-primary' %> <%= link_to 'Click to delete', ground_path(@ground), method: :delete, class: 'btn btn-danger' %></div>
+
+              </div>
+            <% end %>
+            <br>
+            <hr>
+            <!--Accordion-->
+            <div class="element-cn">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="panel-group no-margin" id="accordion">
+                    <div class="panel">
+                      <div class="panel-heading" id="headingOne">
+                        <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                            <small>Hide or Show</small>Slots Status
+                            <span class="icon fa fa-angle-down"></span>
+                          </a>
+                        </h4>
+
+                      </div>
+                      <div  id="collapseOne" class="panel-collapse collapse in" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                          <div class="col-md-12 text-center">
+                            No of courts: <%= @ground.court %>
+                            <!-- <select name="no_courts" id="no_courts">
+                              <option value="one">1</option>
+                            </select> -->
+                          </div>
+                          <div class="col-md-12">
+                            <div class="alert-box alert-attention">
+                              <h6>Attention  message<small>(if you wants to change attention message to ground edit page)</small></h6>
+                              <span><i class="fa fa-angle-right"></i> Note: <%= @ground.attention_message%></span>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-12 col-md-push-9">
+                              <div>
+                                <table>
+                                  <tbody>
+                                    <tr><td style="width:65px;">Weekday</td><td>: Rs. <%= @ground.weekday_price %>/-</td></tr>
+                                    <tr><td style="width:65px;">Weekends</td><td>: Rs. <%= @ground.weekend_price%>/-</td></tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <p><span class="bl_available"><input type="checkbox"></span> Available Slots</p>
+                              <p><span class="bl_booked"><input type="checkbox" disabled></span> Booked/Unallocated Slots</p>
+                              <!-- <p><span class="bl_selected"><input type="checkbox" checked></span> Selected Slots</p> -->
+                              
+                              <!-- <div class="divider-wrapper ">
+                                  <div class="divider"></div>
+                              </div>
+                              
+                              <p><strong>Slots: </strong><span id="selected_slots"><span class="dlabel labels213">31-Aug-2015 12pm(1)</span></span></p>
+                              <p><strong>Base Fare : </strong>Rs.<span id="base_price">100</span></p> -->
+                              <!-- <p><strong>Service Charge : </strong>Rs.<span id="service_charge">0</span></p>
+                              <p><strong>Total Cost: </strong>Rs.<span id="total">0</span></p>
+                              <p><strong>Total Fare : </strong>Rs.<span id="total_price">100</span></p>
+                              <div><a href="#" class="btn btn-primary">Book</a></div> -->
+                          </div>
+                    
+                          <div class="col-md-9 col-xs-12 col-md-pull-3 no-click">
+                            
+                            <table id="slot-view" class="responsive" cellspacing="0">
+                              <tbody>
+
+                                <tr>
+                                  <th>Booking</th>
+                                  <th>12 am</th>
+                                  <th>1 am</th>
+                                  <th>2 am</th>
+                                  <th>3 am</th>
+                                  <th>4 am</th>
+                                  <th>5 am</th>
+                                  <th>6 am</th>
+                                  <th>7 am</th>
+                                  <th>8 am</th>
+                                  <th>9 am</th>
+                                  <th>10 am</th>
+                                  <th>11 am</th>
+                                  <th>12 pm</th>
+                                  <th>1 pm</th>
+                                  <th>2 pm</th>
+                                  <th>3 pm</th>
+                                  <th>4 pm</th>
+                                  <th>5 pm</th>
+                                  <th>6 pm</th>
+                                  <th>7 pm</th>
+                                  <th>8 pm</th>
+                                  <th>9 pm</th>
+                                  <th>10 pm</th>
+                                  <th>11 pm</th>
+                                </tr>
+                                
+                                  <% @ground.booking_dates.each do |d| %>
+                                    <tr>
+                                      <td nowrap>
+                                        <%= d.date_of_booking if d.status == true %> 
+                                      </td>
+                                      <% Timeslot.all.each do |e| %>
+                                        <% @test=0 %>                                  
+                                        <% d.booking_times.each do |t| %>
+                                          <% if e.slot == t.slot%>
+                                            <% if t.status == true %>
+                                              <td>
+                                                <%= check_box_tag(t.id, value = "", checked = false, data: { "price" => t.booking_date.weekend_day? ? t.booking_date.ground.end_price : t.booking_date.ground.day_price}, class: "ts") %>
+                                              </td>
+                                            <% else %>
+                                              <td>
+                                                <input type="checkbox" disabled>
+                                              </td>
+                                            <%end%> 
+                                            <% @test=1 %>
+                                          <%end%>                                      
+                                        <%end%>
+                                        <% if @test==0%>
+                                          <td>
+                                            <input type="checkbox" disabled>
+                                          </td>
+                                        <% end %>
+                                      <% end %>
+                                    </tr>
+                                  <%end%>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Accordion 1 -->
+
+                  </div>
+                  <!-- Accordion -->
+                </div>
+
+              </div>
+            </div>
+            <!--End Accordion-->
+          </section>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- End Main -->
+
+<script type="text/javascript">
+
+ jQuery(document).ready(function(){
+    jQuery('input[type=checkbox]').iCheck({
+       checkboxClass: 'icheckbox_square-green',
+      // radioClass: 'iradio_square-green',
+      // increaseArea: '20%' // optional
+    });
+  });
+</script>

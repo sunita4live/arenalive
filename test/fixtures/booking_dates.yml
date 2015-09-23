@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_of_booking: 2015-08-31
+  status: false
+  ground_id: 
+
+two:
+  date_of_booking: 2015-08-31
+  status: false
+  ground_id: 

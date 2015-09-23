@@ -1,0 +1,30 @@
+<div class="nested-fields">
+   	<%= f.label :Date %><br>
+    <%= f.text_field :date_of_booking, class: 'field-input-calendar field-date-ground datepicker', placeholder: "Booking date"%>
+    
+    <%= f.check_box :status, {checked: true} %>&nbsp;&nbsp;<%= f.label 'available' %><br>
+    <div class="field-input">
+      <table id="tasks">
+      <%= f.fields_for :booking_times, :wrapper => false do |booking_time| %>
+        <tr class="fields">
+          <%= render 'booking_time_fields', f: booking_time %>
+        </tr>
+      <% end %>
+      </table>
+    <%= link_to_add_association 'Add time slot', f, :booking_times, class: "btn1 time-slot" %>
+  </div>
+    <%= link_to_remove_association "Remove date", f, class: "btn-remove rmv"%>
+    <!-- <div class="clearfix"></div> -->
+</div>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.datepicker').datepicker({
+      dateFormat: "dd/mm/yy",
+      showOtherMonths: true,
+      selectOtherMonths: true
+    });
+  });
+</script>

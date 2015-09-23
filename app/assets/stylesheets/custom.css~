@@ -1,0 +1,4 @@
+.bg-1 {
+  
+  background-image: url('assets/bg-1.jpg');
+}

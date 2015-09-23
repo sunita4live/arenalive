@@ -1,0 +1,128 @@
+<section class="sub-banner">
+      <!--Background-->
+      <div class="bg-parallax bg-1"></div>
+      <!--End Background-->
+      <!-- Logo -->
+      <div class="logo-banner text-center">
+        <%= link_to root_path do %>
+          <%= image_tag "logo-banner.png", class: "" %>
+        <% end %>
+      </div>
+      <!-- Logo -->
+    </section>
+    <!--End Banner-->
+
+    <!-- Main -->
+    <div class="main">
+      <div class="container">
+        <div class="main-cn element-page bg-white clearfix">
+          <!--Breakcrumb-->
+          <section class="breakcrumb-sc">
+            <ul class="breadcrumb arrow">
+              <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+              <li>Booking</li>
+            </ul>
+          </section>
+          <!--End Breakcrumb-->
+          <section class="element-sc">
+            <!-- Order Table -->
+            <hr>
+            <div class="col-md-12">
+              <div class="alert alert-info">Having trouble booking slots? Call our executive to book instantly +919093057565</div>
+            </div>
+            <hr>
+            <div class="col-md-8 col-xs-12">
+              <form>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="sr-only" for="your_name">Your Name</label>
+                    <input type="text" class="form-control" id="your_name" placeholder="Your Name">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="sr-only" for="your_name">Your Email</label>
+                    <input type="email" class="form-control" id="your_email" placeholder="Your Email">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="sr-only" for="your_phone">Your Phone</label>
+                    <input type="tel" class="form-control" id="your_phone" placeholder="Your Phone">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="sr-only" for="your_name">Age</label>
+                    <input type="number" class="form-control" id="your_age" placeholder="Age">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <input required type="radio" id="pp-radio-sex-1" name="user_sex" value="male" checked="checked">
+                  <label for="pp-radio-sex-1"><span></span>Male</label>
+                  <input style="margin-left: 3em;" required type="radio" id="pp-radio-sex-2" name="user_sex" value="female">
+                  <label for="pp-radio-sex-2"><span></span>Female</label>
+                </div>
+                <div class="col-md-12">
+                  <h2>Payment Method</h2>
+                  <input required="" type="radio" id="pp-radio-payment-1" name="payment_method" value="PAYU" checked="checked">
+                  <label for="pp-radio-payment-1"><span></span>PayU</label>                  
+                </div>
+                <br><hr>
+                <div class="col-md-12">
+                  <button type="submit" class="btn btn-primary">Go to payment</button>
+                </div>
+                <hr>
+              </form>
+            </div>
+            <div class="col-md-4 col-md-12">
+              <h2>Order Summary</h2><hr>
+              <div class="order-info">
+                <h3 class="text-center" style="color: blue;"><%= @booked_event.first.ground_details.name%></h3><hr>
+                <p style="margin-bottom:5px !important;"><strong>Selected Slots</strong>:
+                <% @booked_event.each do |b|%>
+                  <!-- <span id="slots_sum"></span></p> -->
+                  <div class= "slot_button"><%= b.slot %><h6>(<%= b.booking_date.date_of_booking.strftime("%d %b %Y")%>)</h6></div>            
+                <% end %>
+                <!-- <h6 style="color:#696f78 !important;"><center>(Wooden Court)</center></h6> -->
+                <hr>
+                <table>
+                  <tbody>
+                    <tr><td><h5><strong>Total:</strong></h5> </td><td class="btn-info btn">Rs. <%= @Total_price %></td></tr>
+                    <hr>
+                    <tr class="st_os"><td>(Service Charge) </td><td class="price_os"> + Rs.0</td></tr>
+                  </tbody>
+                </table>
+              </div>              
+            </div>
+            <div class="col-md-12">
+              <div class="divider"></div>
+              
+            </div>
+            <!-- End Order Table -->
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- End Main -->
+
+    <style type="text/css">
+    .slot_button {
+    -moz-user-select: none;
+    background: palegreen none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: gray !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    margin: 2px;
+    padding: 0 3px;
+    text-align: center;
+    text-decoration: none !important;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+    </style>

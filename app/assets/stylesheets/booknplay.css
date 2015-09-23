@@ -1,0 +1,7 @@
+.green {
+	background-color: #59c45a;
+}
+.disabled {
+	background-color: #d3d3d3 !important;
+	opacity: 0.8 !important;
+}

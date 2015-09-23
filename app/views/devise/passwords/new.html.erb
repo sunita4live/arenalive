@@ -1,0 +1,67 @@
+
+<section class="sub-banner">
+            <!--Background-->
+            <div class="bg-parallax bg-1"></div>
+            <!--End Background-->
+            <!-- Logo -->
+            <div class="logo-banner text-center">
+                <%= link_to root_path do %>
+                    <%= image_tag "logo-banner.png", class: "" %>
+                <% end %>
+            </div>
+            <!-- Logo -->
+        </section>
+        <!--End Banner-->
+
+        <!-- Main -->
+        <div class="main">
+            <div class="container">
+                <div class="main-cn element-page bg-white clearfix">
+                    <!--Breakcrumb-->
+                    <section class="breakcrumb-sc">
+                        <ul class="breadcrumb arrow">
+                            <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+                            <li>Getting new password</li>
+                        </ul>
+                        <div class="support float-right">
+                            <small>Call us</small> 123-123-1234
+                        </div>
+                    </section>
+                    <!--End Breakcrumb-->
+                    
+                    <section class="user-profile">
+                        <div class="user-form user-signup">
+                            <div class="row">
+                                <div class="col-md-5">
+                                  <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+                                        <%= devise_error_messages! %>
+                                      <h2 class="user-profile__title">Forgot your password?</h2>
+                                      <p>Get new password here</p>
+                                      
+                                      <div class="field-input">
+                                          <%= f.label :email %><br />
+                                          <%= f.email_field :email, autofocus: true , class: "input-text"%>
+                                      </div>
+                                              
+                                      
+                                      <div class="field-input">
+                                        <%= f.submit "Send me reset password instructions", class: "awe-btn awe-btn-1 awe-btn-medium"%>
+                                          
+                                      </div>
+                                  <% end %>
+                                   
+                                  <div><br><br><br>
+                                    
+                                    
+                                  </div>     
+                                </div>
+                                <div class="col-md-5 col-md-offset-2">
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- End Main -->

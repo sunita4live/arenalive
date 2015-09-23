@@ -1,0 +1,133 @@
+
+<section class="sub-banner">
+            <!--Background-->
+            <div class="bg-parallax bg-1"></div>
+            <!--End Background-->
+            <!-- Logo -->
+            <div class="logo-banner text-center">
+                <%= link_to root_path do %>
+                    <%= image_tag "logo-banner.png", class: "" %>
+                <% end %>
+            </div>
+            <!-- Logo -->
+        </section>
+        <!--End Banner-->
+
+        <!-- Main -->
+        <div class="main">
+            <div class="container">
+                <div class="main-cn element-page bg-white clearfix">
+                    <!--Breakcrumb-->
+                    <section class="breakcrumb-sc">
+                        <ul class="breadcrumb arrow">
+                            <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+                            <li>registration / login </li>
+                        </ul>
+                        <div class="support float-right">
+                            <small>Call us</small> 123-123-1234
+                        </div>
+                    </section>
+                    <!--End Breakcrumb-->
+                    
+                    <section class="user-profile">
+                        <div class="user-form user-signup">
+                            <div class="row">
+                                <div class="col-md-5">
+                                  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+                                  <h2 class="user-profile__title">Sign in</h2>
+
+                                    <p>Access your account information and manage your bookings.</p>
+                                    <div class="field-input">
+                                      <%= f.label :email %><br />
+                                      <%= f.email_field :email, autofocus: true, class: "input-text" %>
+                                    </div>
+                                    <div class="field-input">
+                                        <%= f.label :password %><br />
+                                        <%= f.password_field :password, autocomplete: "off", class: "input-text" %>
+                                    </div>
+                                    <div class="field-input">
+                                        <div class="">
+                                            <% if devise_mapping.rememberable? -%>
+                                            <div class="field">
+                                              <%= f.check_box :remember_me %>
+                                              <%= f.label "Keep me logged in" ,class: "check-box" %>
+                                              <%= link_to "Get a new password", new_user_password_path %>
+                                            </div>
+                                          <% end %>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                    <div class="field-input">
+                                        <%= f.submit "Sign in", class: "awe-btn awe-btn-1 awe-btn-medium" %>
+                                    </div>
+                                   <% end %>
+                                  
+                                   
+                                  <div><br><br><br>
+                                    <%= link_to user_omniauth_authorize_path(:facebook) do %>
+                                      <%= image_tag "fb1.png", class: "" %>
+                                    <% end %>&nbsp;&nbsp;
+                                    
+                                    <%= link_to user_omniauth_authorize_path(:google_oauth2) do %>
+                                      <%= image_tag "google.png", class: "", size: "205x39" %>
+                                    <% end %>
+                                  </div>     
+                                </div>
+                                <div class="col-md-5 col-md-offset-2">
+                                  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+                                    <%= devise_error_messages! %>
+                                      <h2 class="user-profile__title">Sign up</h2>
+                                      <p>Sign up now and receive exclusive offers with huge discounts </p>
+                                      
+                                      <div class="field-input">
+                                          <%= f.label :first_name %><br />
+                                          <%= f.text_field :first_name, :placeholder => "Enter first_name", class: "input-text" %>
+                                      </div>
+                                              
+                                      <div class="field-input">
+                                        
+                                           <%= f.label :email %><br />
+                                            <%= f.email_field :email, autofocus: true , :placeholder => "Enter email", class: "input-text"%>
+                                      </div>
+                                  
+                                      <div class="field-input">
+                                      <%= f.label "User type" %>
+                            
+                                            <%= f.select :role , options_for_select(["member", "ground_owner"]), {}, {:class => 'input-select'} %>
+                                        
+                                      
+                                      </div>
+                                      <div class="field-input">
+                                          <%= f.label :password %>
+                                          <% if @minimum_password_length %>
+                                          <em>(<%= @minimum_password_length %> characters minimum)</em>
+                                          <% end %><br />
+                                          <%= f.password_field :password, autocomplete: "off", :placeholder => "Enter password" , class: "input-text"%>
+                                      </div>
+                                      <div class="field-input">
+                                          <%= f.label :password_confirmation %><br />
+                                          <%= f.password_field :password_confirmation, autocomplete: "off", :placeholder => "password_confirmation" , class: "input-text"%>
+                                          
+                                      </div>
+
+                                      <div class="field-input">
+                                          <div class="">
+                                              <input type="checkbox" id="offers">
+                                              <label for="offers"> Send me Special Offers &amp; Promotions</label>
+                                          </div>
+                                      </div>
+                                      <div class="field-input">
+                                        <%= f.submit "Sign up", class: "awe-btn awe-btn-1 awe-btn-medium"%>
+                                          
+                                      </div>
+                                  <% end %>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- End Main -->

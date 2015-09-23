@@ -1,0 +1,153 @@
+
+
+  <section class="sub-banner">
+    <!--Background-->
+    <div class="bg-parallax bg-1"></div>
+    <!--End Background-->
+    <!-- Logo -->
+    <div class="logo-banner text-center">
+      <%= link_to root_path do %>
+        <%= image_tag "logo-banner.png", class: "" %>
+      <% end %>
+    </div>
+    <!-- Logo -->
+  </section>
+  <!--End Banner-->
+  <div class="main">
+        <div class="container">
+            <div class="main-cn element-page bg-white clearfix">
+                <!--Breakcrumb-->
+                <section class="breakcrumb-sc">
+                    <ul class="breadcrumb arrow">
+                        <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+                        <li>My ground page</li>
+                    </ul>
+                </section>
+                <!--End Breakcrumb-->
+                
+                <section class="user-profile">
+                    <div class="row">
+                        <div class="col-md-3">
+                                <div class="user-profile__header">
+                                    <h4><%= current_user.name %></h4>
+                                    <span>Member Since <%= current_user.created_at.strftime("%b %Y")%></span>
+                                    <p>
+                                      <% if current_user.avatar.present? %>
+                                        <%= image_tag current_user.avatar_url %>
+                                      <% else %>
+                                        <%= image_tag('avatar.png') %>
+                                      <% end %>
+                                    </p>
+                                </div>
+                                <ul class="user-profile__navigation">
+                                    <% if current_user.has_role? :ground_owner %>
+                                      <li class="current">
+                                        <%= link_to grounds_path do %>
+                                            My grounds<%= image_tag('icon-cart.png') %>
+                                        <% end %>
+                                      </li>
+                                      <li >
+                                        <%= link_to new_ground_path do %>
+                                          new ground entry<%= image_tag('icon-hotel.png') %>
+                                        <% end %>
+                                      </li>
+                                    <% else %>
+                                      <li>
+                                        <%= link_to bookings_path do %>
+                                            My bookings<%= image_tag('icon-cart.png') %>
+                                        <% end %>
+                                      </li>
+                                    <% end %>  
+                                      <li >
+                                      <%= link_to profile_path do %>
+                                        My profile <%= image_tag('icon-user.png') %>
+                                      <% end %>
+                                    </li>
+                                    <li>
+                                      <%= link_to edit_user_registration_path do %>
+                                        Setting <%= image_tag('icon-setting.png') %>
+                                      <% end %>
+                                    </li>
+                                    
+                                    <li>
+                                      <%= link_to destroy_user_session_path, method: :delete do %>
+                                        logout <%= image_tag('icon-back.png') %>
+                                      <% end %>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                        <div class="col-md-9">
+                            <h2 class="user-profile__title">My grounds page</h2>
+                            <hr>
+                            <div class="user-form">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                      <div class="hotel-list-cn clearfix">
+
+                                      <!-- Hotel Item -->
+                                        <% if @grounds.present? %>
+                                          <% @grounds.each do |ground| %>
+                                            <div class="hotel-list-item">
+                                              <figure class="hotel-img float-left">
+                                                <a href="#" title="">
+                                                <%= link_to ground_path(ground) do %>
+                                                  <% if ground.ground_attachments.present? %>
+                                                    <%= image_tag ground.ground_attachments.last.photo_url, size: "200" %>
+                                                  <% else %>
+                                                    <%= image_tag 'logo-banner.png' %>
+                                                  <%end%>
+                                                <% end %>
+                                              </figure>
+                                              <div class="hotel-text">
+                                                <div class="hotel-name">
+                                                  <%= link_to ground_path(ground) do %>
+                                                    <%= ground.name %>
+                                                  <% end %>
+                                                </div>
+                                                <hr>
+                                                <div class="">
+                                                  <a class= "btn btn-default btn-sm"><%= ground.category%></a>
+                                                  <%= link_to 'Click to edit info', edit_ground_path(ground), :class => 'btn btn-info pull-right'%>
+                                                </div>
+                                                <hr>
+                                                <div class="hotel-star-address">
+                                                  <address class="hotel-address">
+                                                    <%= ground.area %>
+                                                  </address>
+                                                </div>
+                                                <hr>
+                                                <p>
+                                                  <%= ground.attention_message %>
+                                                </p>
+                                                <!-- <hr class="hr"> -->
+                                                <div class="">
+                                                  <span class="price old-price"></span>
+                                                  <span class="price special-price"><h4>Rs. <%= ground.weekend_price %>/<%= ground.weekday_price %><h6>(Weekend/Weekday)</h6></h4></span>
+                                                </div>
+                                              </div>
+                                              <hr>
+                                            </div>
+                                            <% end %>
+                                          <% end %>
+
+                                            <!-- End Hotel Item -->
+                                            <!-- Hotel Item -->
+                                          </div>
+                                          <%= link_to 'go back', root_path, :class => 'awe-btn awe-btn-1 awe-btn-medium' %>
+
+                                                          
+                                      </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+      
+        </div>
+    </div>
+</div>
+          <!-- End Main -->
+ 

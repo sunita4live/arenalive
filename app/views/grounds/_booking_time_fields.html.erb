@@ -1,0 +1,8 @@
+<div class="nested-fields">
+   	<%#= f.label :time %><br>
+    <%#= f.time_select :time_of_booking%>
+    <%= f.select :timeslot_id, Timeslot.all.map{|e| [e.slot, e.id ]}, {:placeholder => "select time slot"}, class: 'input-select-time', include_blank: false %>
+    <%= f.check_box :status, {checked: true} %>&nbsp;&nbsp;<%= f.label 'Available' %>
+    <%= link_to_remove_association "remove time slot", f, class: "btn-remove"%>
+    <div class="clrfix"></div>
+</div>
