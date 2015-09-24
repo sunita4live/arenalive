@@ -12,7 +12,7 @@
     end
 
     def index
-      @grounds = current_user.grounds if current_user.present? #&& current_user.has_role? "ground_owner"
+      @grounds = current_user.grounds.map{|e| e if e.publish}.compact if current_user.present? #&& current_user.has_role? "ground_owner"
 
     end
 

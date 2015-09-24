@@ -1,20 +1,18 @@
-defaults: &defaults
+development: 
   adapter: postgresql
+  database: myappone_development
   encoding: unicode
   pool: 20
   username: postgres
   password: postgres
   host: localhost
   port: 5432
-
-development:
-  database: myappone_development
-  <<: *defaults
-
-test:
-  database: myappone_test
-  <<: *defaults
-
-production:
-  database: myappone_production
-  <<: *defaults
+production: 
+  adapter: postgresql
+  database: arena_development
+  encoding: unicode
+  pool: 20
+  username: postgres
+  password: postgres
+  host: localhost
+  port: 5432
