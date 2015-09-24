@@ -1,4 +1,5 @@
 class Ground < ActiveRecord::Base
+  include ApplicationHelper
   CATEGORY = ["Tabel Tennis", "BadMinton", "Cricket Nets",  "Snooker", "Tennis"]
   CITY =['Delhi', 'Channei']
   AREA =['Connaught Place', 'Chanakyapuri', 'Delhi Cantonment', 'Vasant Vihar', 'North Delhi', 'Narela' ,'Model Town', 'Narela', 'Alipur', 'North West Delhi', 'Kanjhawala', 'Rohini', 'Kanjhawala', 'Saraswati Vihar', 'West Delhi', 'Rajouri Garden', 'Patel Nagar', 'Punjabi Bagh', 'South West Delhi', 'Dwarka', 'Najafgarh', 'Kapashera', 'South Delhi', 'Saket', 'Hauz Khas', 'Mehrauli', 'South East Delhi', 'Defence Colony', 'Lajpat Nagar', 'Kalkaji', 'Sarita Vihar', 'Central Delhi', 'Daryaganj', 'Karol Bagh', 'Kotwali', 'Civil Lines', 'North East Delhi', 'Seelampur', 'Yamuna Vihar', 'Karawal Nagar', 'Shahdara',  'Seemapuri', 'Vivek Vihar', 'East Delhi', 'Preet Vihar', 'Gandhi Nagar', 'Mayur Vihar']
@@ -21,6 +22,8 @@ class Ground < ActiveRecord::Base
 
   accepts_nested_attributes_for :ground_attachments, reject_if: :all_blank, allow_destroy: true
   accepts_nested_attributes_for :booking_dates, reject_if: :all_blank, allow_destroy: true
+
+  after_create :set_merchant_id
 
   attr_accessor :add_booking_dates, :add_closing_dates, :closing_times, :special_closing_date, :special_closing_times, :slot_ids
   def self.search(category, city, area, date)
@@ -116,4 +119,10 @@ class Ground < ActiveRecord::Base
   def end_price
     (self.weekend_price * 10)/100
   end
+
+  def set_merchant_id
+    id = generate_unique_id
+    self.update(merchant_id: id)
+  end
+
 end
