@@ -9,10 +9,10 @@ development:
   port: 5432
 production: 
   adapter: postgresql
-  database: arena_development
+  database: myappone_development
   encoding: unicode
   pool: 20
   username: postgres
   password: postgres
-  host: localhost
+  # host: localhost
   port: 5432

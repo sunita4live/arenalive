@@ -7,7 +7,33 @@
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 
+set :stage, :production
+set :server_address, "52.88.77.130"
+set :user, 'ubuntu'
 
+
+
+set :deploy_via, :remote_cache
+set :use_sudo, false
+
+server '52.88.77.130',
+  roles: [:web, :app, :db],
+  user: fetch(:user),
+  primary: true
+
+set :deploy_to, "/home/ubuntu/www/arenalive"
+
+set :ssh_options, {
+  forward_agent: true,
+  auth_methods: %w(publickey),
+  user: 'ubuntu',
+}
+
+
+fetch(:ssh_options)[:auth_methods] = ["publickey"]
+fetch(:ssh_options)[:keys] = ["/home/hp/sport.pem"]
+set :rails_env, :production
+set :conditionally_migrate, true    
 
 # role-based syntax
 # ==================
@@ -21,7 +47,7 @@
 # role :web, %w{user1@primary.com user2@additional.com}, other_property: :other_value
 # role :db,  %w{deploy@example.com}
 
-server '52.89.85.118', user: 'deploy', roles: %w{web app db}
+
 
 # Configuration
 # =============

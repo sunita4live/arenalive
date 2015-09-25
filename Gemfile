@@ -43,7 +43,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
+gem 'net-ssh', '~> 2.9.2'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -68,16 +68,15 @@ gem 'rails_12factor', group: :production
 
 gem "font-awesome-rails"
 
-group :production do
-  gem 'unicorn','4.8.3'
-end
+# group :production do
+#   gem 'unicorn','4.8.3'
+# end
 
-gem 'figaro'
-gem 'puma'
-group :development do
-  gem 'capistrano'
-  gem 'capistrano3-puma'
-  gem 'capistrano-rails', require: false
-  gem 'capistrano-bundler', require: false
-  gem 'capistrano-rvm'
+group :developemnt do
+  gem 'capistrano', '~> 3.4.0'
+  gem 'capistrano-puma', require: false
+  gem 'capistrano-ssh-doctor', '~> 1.0'
+  gem 'capistrano-rails',   '~> 1.1', require: false
+  gem 'capistrano-bundler', '~> 1.1', require: false
+  gem 'capistrano-rvm',   '~> 0.1', require: false
 end
