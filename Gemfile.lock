@@ -288,7 +288,7 @@ DEPENDENCIES
   capistrano-bundler (~> 1.1)
   capistrano-puma
   capistrano-rails (~> 1.1)
-  capistrano-rvm (~> 0.1)
+  capistrano-rvm
   capistrano-ssh-doctor (~> 1.0)
   carrierwave
   cocoon

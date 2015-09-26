@@ -1,18 +1,18 @@
 development: 
   adapter: postgresql
-  database: myappone_development
+  database: arena_production
   encoding: unicode
   pool: 20
-  username: postgres
-  password: postgres
+  username: sunita4live
+  password: sunita12
   host: localhost
   port: 5432
 production: 
   adapter: postgresql
-  database: myappone_development
+  database: arena_production
   encoding: unicode
   pool: 20
-  username: postgres
-  password: postgres
+  username: sunita4live
+  password: sunita12
   # host: localhost
   port: 5432

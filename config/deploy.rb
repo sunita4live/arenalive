@@ -34,7 +34,8 @@ set :pty, true
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
-
+# set :rvm1_ruby_version, "ruby 2.2.2p95"
+set :rvm_ruby_version, '2.2.2'
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 set :puma_rackup, -> { File.join(current_path, 'config.ru') }

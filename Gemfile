@@ -78,5 +78,5 @@ group :developemnt do
   gem 'capistrano-ssh-doctor', '~> 1.0'
   gem 'capistrano-rails',   '~> 1.1', require: false
   gem 'capistrano-bundler', '~> 1.1', require: false
-  gem 'capistrano-rvm',   '~> 0.1', require: false
+  gem 'capistrano-rvm', :require => false
 end
