@@ -289,7 +289,7 @@ DEPENDENCIES
   byebug
   cancancan
   capistrano (~> 3.4.0)
-  capistrano-bundler
+  capistrano-bundler (~> 1.1)
   capistrano-rails (~> 1.1)
   capistrano-rvm
   capistrano-ssh-doctor (~> 1.0)

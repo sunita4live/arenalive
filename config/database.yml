@@ -1,12 +1,12 @@
-# development: 
-#   adapter: postgresql
-#   database: arena_production
-#   encoding: unicode
-#   pool: 20
-#   username: sunita4live
-#   password: sunita12
-#   host: localhost
-#   port: 5432
+development: 
+  adapter: postgresql
+  database: arena_production
+  encoding: unicode
+  pool: 20
+  username: sunita4live
+  password: sunita12
+  host: localhost
+  port: 5432
 production: 
   adapter: postgresql
   database: arena_production

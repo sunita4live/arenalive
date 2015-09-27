@@ -74,7 +74,6 @@ gem "font-awesome-rails"
 gem 'unicorn' 
 gem 'capistrano', '~> 3.4.0'
 gem 'capistrano-ssh-doctor', '~> 1.0'
+gem 'capistrano-rails',   '~> 1.1', require: false
+gem 'capistrano-bundler', '~> 1.1', require: false
 gem 'capistrano-rvm', :require => false
-
-gem 'capistrano-bundler'
-gem 'capistrano-rails', '~> 1.1'
