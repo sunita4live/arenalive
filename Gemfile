@@ -71,12 +71,11 @@ gem "font-awesome-rails"
 # group :production do
 #   gem 'unicorn','4.8.3'
 # end
+gem 'unicorn' 
+gem 'capistrano', '~> 3.4.0'
+gem 'capistrano-ssh-doctor', '~> 1.0'
+gem 'capistrano-rvm', :require => false
 
-group :developemnt do
-  gem 'capistrano', '~> 3.4.0'
-  gem 'capistrano-puma', require: false
-  gem 'capistrano-ssh-doctor', '~> 1.0'
-  gem 'capistrano-rails',   '~> 1.1', require: false
-  gem 'capistrano-bundler', '~> 1.1', require: false
-  gem 'capistrano-rvm', :require => false
-end
+gem 'capistrano-bundler'
+gem 'capistrano-rails', '~> 1.1'
+gem 'capistrano3-unicorn'
