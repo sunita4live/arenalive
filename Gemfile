@@ -78,4 +78,3 @@ gem 'capistrano-rvm', :require => false
 
 gem 'capistrano-bundler'
 gem 'capistrano-rails', '~> 1.1'
-gem 'capistrano3-unicorn'
