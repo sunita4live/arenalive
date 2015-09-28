@@ -10,11 +10,8 @@
 set :stage, :production
 set :server_address, "52.88.187.25"
 set :user, 'ubuntu'
-
-
-
 set :deploy_via, :remote_cache
-set :use_sudo, false
+set :use_sudo, true
 set :branch, 'setup'
 server '52.88.187.25',
   roles: [:web, :app, :db],
