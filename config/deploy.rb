@@ -1,5 +1,4 @@
-require "bundler/capistrano"
-require "rvm/capistrano"
+
 # config valid only for current version of Capistrano
 lock '3.4.0'
 
@@ -19,7 +18,7 @@ set :deploy_to, '/var/www/arenalive/'
 set :scm, :git
 # Default value for :format is :pretty
 # set :format, :pretty
-set :branch, 'master'
+
 # Default value for :log_level is :debug
 # set :log_level, :debug
 set :keep_releases, 5
@@ -44,28 +43,32 @@ set :rvm_ruby_version, '2.2.2'
 after "deploy", "deploy:cleanup" # keep only the last 5 releases
 
 namespace :deploy do
-  %w[start stop restart].each do |command|
-    desc "#{command} unicorn server"
-    task command, roles: :app, except: {no_release: true} do
-      run "/etc/init.d/unicorn_#{application} #{command}"
+   task :setup_config do
+    on roles :all do
+      execute "sudo ln -nfs #{current_path}/config/deploy/production/nginx.conf /etc/nginx/sites-enabled/arenalive"
+      execute "sudo ln -nfs #{current_path}/config/deploy/unicorn_init.sh /etc/init.d/unicorn_arenalive"
+      execute "sudo mkdir -p #{shared_path}/config"
+      #put File.read("config/database.example.yml"), "#{shared_path}/config/database.yml"
+      puts "Now edit the config files in #{shared_path}."
+    end
+  end
+  
+  #after :restart, :clear_cache do
+  #  on roles(:web), in: :groups, limit: 3, wait: 10 do
+  #    # Here we can do anything such as:
+  #    # within release_path do
+  #    #   execute :rake, 'cache:clear'
+  #    # end
+  #  end
+  #end
+  
+  after 'deploy:publishing', 'deploy:restart'  
+  task :restart, :clear_cache do
+    on roles :all do
+      execute "ps aux | grep 'unicorn' | awk '{print $2}' | xargs sudo kill -9"
+      invoke 'unicorn:start'
     end
   end
 
-  task :setup_config, roles: :app do
-    sudo "ln -nfs #{current_path}/config/production/nginx.conf /etc/nginx/sites-enabled/#{application}"
-    sudo "ln -nfs #{current_path}/config/unicorn_init.sh /etc/init.d/unicorn_#{application}"
-    run "mkdir -p #{shared_path}/config"
-    put File.read("config/database.example.yml"), "#{shared_path}/config/database.yml"
-    puts "Now edit the config files in #{shared_path}."
-  end
-  after "deploy:setup", "deploy:setup_config"
-
-  task :symlink_config, roles: :app do
-    run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
-  end
-  after "deploy:finalize_update", "deploy:symlink_config"
-
 end
 
-  
-end

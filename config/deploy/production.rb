@@ -15,7 +15,7 @@ set :user, 'ubuntu'
 
 set :deploy_via, :remote_cache
 set :use_sudo, false
-
+set :branch, 'setup'
 server '52.88.187.25',
   roles: [:web, :app, :db],
   user: fetch(:user),
