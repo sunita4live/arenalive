@@ -4,7 +4,7 @@
 # that may not be needed for some applications. See
 # http://unicorn.bogomips.org/examples/unicorn.conf.minimal.rb
 # for a much simpler configuration file.
-#
+
 # See http://unicorn.bogomips.org/Unicorn/Configurator.html for complete
 # documentation.
 

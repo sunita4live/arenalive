@@ -1,3 +1,5 @@
+require "bundler/capistrano"
+require "rvm/capistrano"
 # config valid only for current version of Capistrano
 lock '3.4.0'
 
@@ -5,7 +7,7 @@ set :application, 'arenalive'
 #set :repo_url, 'https://github.com/sunita4live/arenalive.git'
 set :repo_url, 'git@github.com:sunita4live/arenalive.git'
 
-set :deploy_to, '/home/ubantu/www/arenalive'
+set :deploy_to, '/var/www/arenalive/'
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
@@ -39,25 +41,31 @@ set :rvm_ruby_version, '2.2.2'
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
+after "deploy", "deploy:cleanup" # keep only the last 5 releases
+
 namespace :deploy do
-
-  after :restart, :clear_cache do
-    on roles(:web), in: :groups, limit: 3, wait: 10 do
-      # Here we can do anything such as:
-      # within release_path do
-      #   execute :rake, 'cache:clear'
-      # end
+  %w[start stop restart].each do |command|
+    desc "#{command} unicorn server"
+    task command, roles: :app, except: {no_release: true} do
+      run "/etc/init.d/unicorn_#{application} #{command}"
     end
   end
 
-  task :setup_config do
-    on roles :all do
-      execute "sudo ln -nfs #{current_path}/config/deploy/production/nginx.conf /etc/nginx/sites-enabled/arenalive"
-      execute "sudo ln -nfs #{current_path}/config/deploy/production/unicorn_init.sh /etc/init.d/unicorn_arenalive"
-      execute "mkdir -p #{shared_path}/config"
-      #put File.read("config/database.example.yml"), "#{shared_path}/config/database.yml"
-      puts "Now edit the config files in #{shared_path}."
-    end
+  task :setup_config, roles: :app do
+    sudo "ln -nfs #{current_path}/config/production/nginx.conf /etc/nginx/sites-enabled/#{application}"
+    sudo "ln -nfs #{current_path}/config/unicorn_init.sh /etc/init.d/unicorn_#{application}"
+    run "mkdir -p #{shared_path}/config"
+    put File.read("config/database.example.yml"), "#{shared_path}/config/database.yml"
+    puts "Now edit the config files in #{shared_path}."
   end
+  after "deploy:setup", "deploy:setup_config"
+
+  task :symlink_config, roles: :app do
+    run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+  end
+  after "deploy:finalize_update", "deploy:symlink_config"
+
+end
+
   
 end

@@ -8,7 +8,7 @@
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 
 set :stage, :production
-set :server_address, "52.88.77.130"
+set :server_address, "52.88.187.25"
 set :user, 'ubuntu'
 
 
@@ -16,12 +16,12 @@ set :user, 'ubuntu'
 set :deploy_via, :remote_cache
 set :use_sudo, false
 
-server '52.88.77.130',
+server '52.88.187.25',
   roles: [:web, :app, :db],
   user: fetch(:user),
   primary: true
 
-set :deploy_to, "/home/ubuntu/www/arenalive"
+set :deploy_to, "/var/www/arenalive"
 
 set :ssh_options, {
   forward_agent: true,
@@ -31,7 +31,7 @@ set :ssh_options, {
 
 
 fetch(:ssh_options)[:auth_methods] = ["publickey"]
-fetch(:ssh_options)[:keys] = ["/home/hp/sport.pem"]
+#fetch(:ssh_options)[:keys] = ["/home/hp/sport.pem"]
 set :rails_env, :production
 set :conditionally_migrate, true    
 
