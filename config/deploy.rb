@@ -1,4 +1,5 @@
-
+  # Ensure that bundle is used for rake tasks
+SSHKit.config.command_map[:rake] = "bundle exec rake"
 # config valid only for current version of Capistrano
 lock '3.4.0'
 
