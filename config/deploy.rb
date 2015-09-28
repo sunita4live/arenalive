@@ -49,5 +49,15 @@ namespace :deploy do
       # end
     end
   end
+
+  task :setup_config do
+    on roles :all do
+      execute "sudo ln -nfs #{current_path}/config/deploy/production/nginx.conf /etc/nginx/sites-enabled/arenalive"
+      execute "sudo ln -nfs #{current_path}/config/deploy/production/unicorn_init.sh /etc/init.d/unicorn_arenalive"
+      execute "mkdir -p #{shared_path}/config"
+      #put File.read("config/database.example.yml"), "#{shared_path}/config/database.yml"
+      puts "Now edit the config files in #{shared_path}."
+    end
+  end
   
 end
