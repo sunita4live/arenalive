@@ -12,7 +12,7 @@ production:
   database: arena_production
   encoding: unicode
   pool: 20
-  username: sunita4live
-  password: sunita12
+  username: postgres
+  password: postgres
   # host: localhost
   port: 5432
